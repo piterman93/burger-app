@@ -1,0 +1,41 @@
+.home__wrapper {
+  .home__contact {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 300px;
+      background-image: url(../images/home-contact.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.8;
+    }
+
+    .home__contact_wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70%;
+      width: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.582);
+      -webkit-box-shadow: -1px 1px 10px 1px rgba(232, 232, 232, 1);
+      -moz-box-shadow: -1px 1px 10px 1px rgba(232, 232, 232, 1);
+      box-shadow: -1px 1px 10px 1px rgba(232, 232, 232, 1);
+    }
+  }
+}
