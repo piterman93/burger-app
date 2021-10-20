@@ -1,0 +1,72 @@
+.footer__wrapper {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+
+  .footer__logo {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+      letter-spacing: 0.2rem;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 20px;
+    }
+
+    .footer__logo_container {
+      width: 150px;
+      height: 120px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 0.3rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .footer__contact {
+    width: 22%;
+    min-height: 40vh;
+
+    #underline {
+      display: block;
+      width: 40px;
+      height: 0.25vh;
+      background-color: rgb(212, 109, 13);
+      margin-bottom: 2rem;
+    }
+
+    .contact__info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .contact__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        p {
+          margin: 0.2rem;
+        }
+      }
+    }
+  }
+
+  .footer__hours {
+    width: 22%;
+    min-height: 40vh;
+  }
+
+  .footer__media {
+    width: 22%;
+    min-height: 40vh;
+  }
+}

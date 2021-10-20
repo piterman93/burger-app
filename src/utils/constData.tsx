@@ -65,3 +65,19 @@ export const AboutMenuItemsData: MenuItemProps[] = [
     priceSet: "22/24 zł",
   },
 ];
+
+export interface weekDay {
+  id: number;
+  title: string;
+  hours: string;
+}
+
+export const weekDays: weekDay[] = [
+  { id: 1, title: "Poniedziałek: ", hours: "10:00 - 22:00" },
+  { id: 2, title: "Wtorek: ", hours: "10:00 - 22:00" },
+  { id: 3, title: "Środa: ", hours: "10:00 - 22:00" },
+  { id: 4, title: "Czwartek: ", hours: "10:00 - 22:00" },
+  { id: 5, title: "Piątek: ", hours: "10:00 - 22:00" },
+  { id: 6, title: "Sobota: ", hours: "10:00 - 22:00" },
+  { id: 7, title: "Niedziela: ", hours: "14:00 - 22:00" },
+];

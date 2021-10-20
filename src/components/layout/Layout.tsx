@@ -2,7 +2,7 @@ import React from "react";
 
 import "../../styles/Layout.scss";
 
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Section from "./Section";
