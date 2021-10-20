@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../styles/HomeAbout.scss";
 
@@ -21,13 +22,15 @@ const HomeAbout: React.FC = () => {
             lokalnej piekarni, do tego belgijskie frytki smażone tradycyjnie na
             tłuszczu wołowym. Mamy w menu również burgery wegetariańskie.
           </p>
-          <button className="button button__menu">
-            <span>O NAS</span>
-            <div className="arrow">
-              Let's go!
-              <ArrowRightAltIcon />
-            </div>
-          </button>
+          <Link to="/about-us">
+            <button className="button button__menu">
+              <span>O NAS</span>
+              <div className="arrow">
+                Let's go!
+                <ArrowRightAltIcon />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

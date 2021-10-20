@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../styles/BannerCard.scss";
 
@@ -25,13 +26,15 @@ const BannerCard: React.FC = () => {
         </div>
         <h1>Najlepsze burgery w Gorlicach!</h1>
         <h2>Sprawdź naszą ofertę</h2>
-        <button className="button button__menu">
-          <span>MENU</span>
-          <div className="arrow">
-            Let's go!
-            <ArrowRightAltIcon />
-          </div>
-        </button>
+        <Link to="/menu">
+          <button className="button button__menu">
+            <span>MENU</span>
+            <div className="arrow">
+              Let's go!
+              <ArrowRightAltIcon />
+            </div>
+          </button>
+        </Link>
       </div>
       <div className="card__image_container">
         <img src={home2} alt="Burger image 2" />

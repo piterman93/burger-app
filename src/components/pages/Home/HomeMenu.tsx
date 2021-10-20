@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../../styles/HomeMenu.scss";
 
@@ -48,13 +49,15 @@ const HomeMenu: React.FC = () => {
             {menuData}
           </ul>
         </Card>
-        <button className="button button__menu">
-          <span>CAŁE MENU</span>
-          <div className="arrow">
-            Let's go!
-            <ArrowRightAltIcon />
-          </div>
-        </button>
+        <Link to="/menu">
+          <button className="button button__menu">
+            <span>CAŁE MENU</span>
+            <div className="arrow">
+              Let's go!
+              <ArrowRightAltIcon />
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );

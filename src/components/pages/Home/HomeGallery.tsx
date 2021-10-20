@@ -7,6 +7,7 @@ import gallery2 from "../../../images/gallery2.jpg";
 import gallery3 from "../../../images/gallery3.jpg";
 
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Link } from "react-router-dom";
 
 const HomeGallery: React.FC = () => {
   return (
@@ -18,13 +19,15 @@ const HomeGallery: React.FC = () => {
             Głodny? Zobacz zdjęcia naszych przepysznych burgerów i odwiedź nasz
             lokal już dziś!
           </p>
-          <button className="button button__menu">
-            <span>GALERIA</span>
-            <div className="arrow">
-              Let's go!
-              <ArrowRightAltIcon />
-            </div>
-          </button>
+          <Link to="/gallery">
+            <button className="button button__menu">
+              <span>GALERIA</span>
+              <div className="arrow">
+                Let's go!
+                <ArrowRightAltIcon />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="home__gallery_images">

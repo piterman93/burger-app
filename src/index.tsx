@@ -1,5 +1,11 @@
 import ReactDOM from "react-dom";
 import "./styles/index.scss";
 import App from "./App";
+import SimpleReactLightbox from "simple-react-lightbox";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <SimpleReactLightbox>
+    <App />
+  </SimpleReactLightbox>,
+  document.getElementById("root")
+);
