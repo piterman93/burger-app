@@ -1,0 +1,15 @@
+.window__info h3 {
+  margin: 0.25rem 0;
+}
+
+.window__info p {
+  margin: 0.25rem 0;
+}
+
+.window__info a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: blue;
+}
+/*# sourceMappingURL=Map.css.map */

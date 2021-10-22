@@ -1,62 +1,61 @@
-.footer__wrapper {
-  .footer__hours {
-    #underline {
-      display: block;
-      width: 40px;
-      height: 0.25vh;
-      background-color: rgb(212, 109, 13);
-      margin-bottom: 2rem;
-    }
+.footer__hours {
+  min-width: 22vw;
+  #underline {
+    display: block;
+    width: 40px;
+    height: 0.25vh;
+    background-color: rgb(212, 109, 13);
+    margin-bottom: 2rem;
+  }
 
-    .accordion {
-      .today {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        .left {
-          min-width: 100px;
-        }
+  .accordion {
+    .today {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .left {
+        min-width: 100px;
+      }
 
-        span {
-          margin-right: 1rem;
-          transition: 0.3s all ease;
+      span {
+        margin-right: 1rem;
+        transition: 0.3s all ease;
 
-          &.inactive {
-            opacity: 0;
-          }
-        }
-
-        button {
-          background-color: rgb(20, 20, 20);
-          color: white;
-          border: none;
-          cursor: pointer;
-
-          .icon {
-            transition: 0.3s all ease;
-
-            &.active {
-              transform: rotateZ(180deg);
-            }
-          }
+        &.inactive {
+          opacity: 0;
         }
       }
 
-      .week {
-        .day {
-          transition: 0.3s all ease;
-          &.inactive {
-            opacity: 0;
-          }
-          &.color {
-            color: rgb(212, 109, 13);
-          }
+      button {
+        background-color: rgb(20, 20, 20);
+        color: white;
+        border: none;
+        cursor: pointer;
 
-          span {
-            display: inline-block;
-            margin-right: 1rem;
-            min-width: 100px;
+        .icon {
+          transition: 0.3s all ease;
+
+          &.active {
+            transform: rotateZ(180deg);
           }
+        }
+      }
+    }
+
+    .week {
+      .day {
+        transition: 0.3s all ease;
+        &.inactive {
+          opacity: 0;
+        }
+        &.color {
+          color: rgb(212, 109, 13);
+        }
+
+        span {
+          display: inline-block;
+          margin-right: 1rem;
+          min-width: 100px;
         }
       }
     }

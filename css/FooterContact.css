@@ -1,0 +1,89 @@
+.footer__logo {
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__logo span {
+  letter-spacing: 0.2rem;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 20px;
+}
+
+.footer__logo .footer__logo_container {
+  width: 150px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.footer__logo .footer__logo_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__contact {
+  min-width: 22vw;
+  min-height: 40vh;
+}
+
+.footer__contact #underline {
+  display: block;
+  width: 40px;
+  height: 0.25vh;
+  background-color: #d46d0d;
+  margin-bottom: 2rem;
+}
+
+.footer__contact .contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__contact .contact__info .contact__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__contact .contact__info .contact__description p {
+  margin: 0.2rem;
+}
+
+.footer__hours {
+  width: 22%;
+  min-height: 40vh;
+}
+
+.footer__media {
+  width: 22%;
+  min-height: 40vh;
+}
+/*# sourceMappingURL=FooterContact.css.map */

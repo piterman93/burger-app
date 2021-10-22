@@ -577,3 +577,29 @@ export const galleryImages: galleryItem[] = [
     alt: "Burger Bar Gallery",
   },
 ];
+
+export const containerVariants = {
+  hidden: {
+    delay: 1,
+    opacity: 0,
+    x: "-100vw",
+  },
+  visible: {
+    opacity: 1,
+    x: "0",
+    transition: {
+      delay: 1.1,
+      duration: 1,
+      type: "spring",
+    },
+  },
+  exit: {
+    x: "100vw",
+    opacity: 0,
+    transition: {
+      ease: "anticipate",
+      duration: 1,
+      type: "tween",
+    },
+  },
+};

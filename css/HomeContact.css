@@ -1,0 +1,55 @@
+.home__wrapper .home__contact {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__wrapper .home__contact::before {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/home-contact.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+}
+
+.home__wrapper .home__contact .home__contact_wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.582);
+  border-radius: 8px;
+  -webkit-box-shadow: -1px 1px 10px 1px #e8e8e8;
+  box-shadow: -1px 1px 10px 1px #e8e8e8;
+}
+/*# sourceMappingURL=HomeContact.css.map */

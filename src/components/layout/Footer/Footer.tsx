@@ -24,7 +24,12 @@ const Footer: React.FC = () => {
         <FooterMedia />
       </div>
       <div className="footer__bottom">
-        <p>Copyright© 2021 || Piotr Maniak</p>
+        <p>Copyright© 2021</p>
+        <span>
+          <a href="https://www.linkedin.com/in/piotrmaniak93/" target="_blank">
+            Piotr Maniak
+          </a>
+        </span>
       </div>
     </div>
   );

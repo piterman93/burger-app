@@ -26,11 +26,11 @@ const FooterMedia: React.FC = () => {
           </a>
         </div>
       </div>
-      <h3>Spradź opinie:</h3>
+      <h3>Sprawdź opinie:</h3>
       <span className="underline" />
       <div className="icon__container">
         <a
-          href="https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1600024,15z/data=!4m5!3m4!1s0x0:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024"
+          href="https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1600024,15z/data=!4m7!3m6!1s0x0:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024!9m1!1b1"
           target="_blank"
         >
           <GoogleIcon />

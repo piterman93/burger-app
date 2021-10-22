@@ -1,0 +1,74 @@
+.footer__hours {
+  min-width: 22vw;
+}
+
+.footer__hours #underline {
+  display: block;
+  width: 40px;
+  height: 0.25vh;
+  background-color: #d46d0d;
+  margin-bottom: 2rem;
+}
+
+.footer__hours .accordion .today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__hours .accordion .today .left {
+  min-width: 100px;
+}
+
+.footer__hours .accordion .today span {
+  margin-right: 1rem;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.footer__hours .accordion .today span.inactive {
+  opacity: 0;
+}
+
+.footer__hours .accordion .today button {
+  background-color: #141414;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__hours .accordion .today button .icon {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.footer__hours .accordion .today button .icon.active {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.footer__hours .accordion .week .day {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.footer__hours .accordion .week .day.inactive {
+  opacity: 0;
+}
+
+.footer__hours .accordion .week .day.color {
+  color: #d46d0d;
+}
+
+.footer__hours .accordion .week .day span {
+  display: inline-block;
+  margin-right: 1rem;
+  min-width: 100px;
+}
+/*# sourceMappingURL=FooterHours.css.map */
