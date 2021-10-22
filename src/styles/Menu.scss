@@ -1,0 +1,175 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 40px;
+    margin: 3rem 0;
+    border: 2px dotted white;
+    padding: 0.5rem 2rem;
+    text-decoration: underline;
+  }
+
+  .menu__list {
+    width: 100vh;
+    height: 20vh;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+
+      li {
+        width: 200px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 80%;
+          top: 0px;
+          left: 20px;
+          right: 0;
+          bottom: 0;
+          transition: 0.3s all ease;
+          border-bottom: 2px solid rgb(212, 109, 13);
+          z-index: -1;
+          transform: scaleX(0);
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+        }
+        span {
+          margin-left: 1rem;
+          text-transform: uppercase;
+          font-size: 20px;
+          &.active {
+            color: rgb(212, 109, 13);
+            border-bottom: 2px solid rgb(212, 109, 13);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .menu__image {
+    height: 300px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      position: absolute;
+      width: 100%;
+      height: 5rem;
+      background-color: rgba(0, 0, 0, 0.445);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: "Rampart One", cursive;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .menu__card {
+    width: 100%;
+    background-color: black;
+    // background-image: url(../images/menu-back.jpg);
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      width: 80%;
+
+      > li:nth-child(1) {
+        .menu__item_wrapper {
+          .menu__item {
+            transform: translateX(100px);
+          }
+        }
+      }
+    }
+
+    .additives__card {
+      background-color: rgb(20, 20, 20);
+      -webkit-box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+      -moz-box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+      box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+      border: 2px solid rgba(66, 66, 66, 0.205);
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      padding: 0 2rem;
+      padding-bottom: 1rem;
+
+      h2 {
+        text-decoration: underline;
+      }
+
+      .additives__description {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          width: 40%;
+
+          ul {
+            list-style: square;
+          }
+        }
+
+        .right {
+          width: 60%;
+
+          .additives__item {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

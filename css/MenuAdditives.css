@@ -1,0 +1,56 @@
+.menu__additives_card {
+  background-color: #141414;
+  -webkit-box-shadow: 2px 4px 24px 0px #181818;
+  box-shadow: 2px 4px 24px 0px #181818;
+  border: 2px solid rgba(66, 66, 66, 0.205);
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__additives_card h2 {
+  text-decoration: underline;
+}
+
+.menu__additives_card .menu__additives_description ul {
+  padding: 0;
+  width: 100%;
+}
+
+.menu__additives_card .menu__additives_description ul li {
+  border-bottom: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 18px;
+  padding-top: 0.75rem;
+}
+
+.menu__additives_card .menu__additives_description ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__additives_card .menu__additives_description ul li span:nth-child(2) {
+  min-width: 60px;
+}
+/*# sourceMappingURL=MenuAdditives.css.map */

@@ -6,7 +6,7 @@ import "../../styles/Section.scss";
 
 import Home from "../pages/Home/Home";
 import About from "../pages/About";
-import Menu from "../pages/Menu";
+import Menu from "../pages/Menu/Menu";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact/Contact";
 

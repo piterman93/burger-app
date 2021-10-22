@@ -5,12 +5,13 @@ import "../../../styles/HomeMenu.scss";
 
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Card from "../../UI/Card";
-import MenuItem from "../../../components/UI/MenuItem";
+import BurgerMenuItem from "../../UI/BurgerMenuItem";
 import { AboutMenuItemsData } from "../../../utils/constData";
+import BurgerMenuItemTitle from "../../UI/BurgerMenuItemTitle";
 
 const HomeMenu: React.FC = () => {
   const menuData = AboutMenuItemsData.map((item) => (
-    <MenuItem
+    <BurgerMenuItem
       key={item.id}
       src={item.src}
       description={item.description}
@@ -32,20 +33,7 @@ const HomeMenu: React.FC = () => {
         </p>
         <Card className="home__menu_card">
           <ul>
-            <li>
-              <div className="menu__item_wrapper">
-                <div className="menu__item">
-                  <div className="menu__item_left">
-                    <span className="item__title">NAZWA:</span>
-                  </div>
-                  <div className="menu__item_right">
-                    <div className="price">mały</div>
-                    <div className="price">duży</div>
-                    <div className="price">zestaw</div>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <BurgerMenuItemTitle />
             {menuData}
           </ul>
         </Card>

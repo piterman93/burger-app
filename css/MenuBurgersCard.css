@@ -1,0 +1,64 @@
+.additives__card {
+  background-color: #141414;
+  -webkit-box-shadow: 2px 4px 24px 0px #181818;
+  box-shadow: 2px 4px 24px 0px #181818;
+  border: 2px solid rgba(66, 66, 66, 0.205);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.additives__card h2 {
+  text-decoration: underline;
+}
+
+.additives__card .additives__description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additives__card .additives__description .left {
+  width: 40%;
+}
+
+.additives__card .additives__description .left ul {
+  list-style: square;
+}
+
+.additives__card .additives__description .right {
+  width: 60%;
+}
+
+.additives__card .additives__description .right .additives__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additives__card .additives__description .right .additives__item span {
+  display: inline-block;
+}
+/*# sourceMappingURL=MenuBurgersCard.css.map */

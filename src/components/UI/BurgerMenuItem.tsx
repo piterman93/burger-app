@@ -1,6 +1,8 @@
 import React from "react";
 
-export interface MenuItemProps {
+import "../../styles/BurgerMenuItem.scss";
+
+export interface BurgerMenuItemProps {
   id?: number;
   src: string;
   alt: string;
@@ -11,7 +13,7 @@ export interface MenuItemProps {
   priceSet: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({
+const BurgerMenuItem: React.FC<BurgerMenuItemProps> = ({
   src,
   alt,
   title,
@@ -42,4 +44,4 @@ const MenuItem: React.FC<MenuItemProps> = ({
   );
 };
 
-export default MenuItem;
+export default BurgerMenuItem;

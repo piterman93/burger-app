@@ -1,91 +1,4 @@
-import { MenuItemProps } from "../components/UI/MenuItem";
-
-import ostry from "../images/ostry.jpg";
-import cheeser from "../images/cheeser.jpg";
-import bbq from "../images/bbq.jpg";
-import bacon from "../images/bacon.jpg";
-
-// import img1 from "../images/gallery/1.jpg";
-// import img2 from "../images/gallery/2.jpg";
-// import img3 from "../images/gallery/3.jpg";
-// import img4 from "../images/gallery/4.jpg";
-// import img5 from "../images/gallery/5.jpg";
-// import img6 from "../images/gallery/6.jpg";
-// import img7 from "../images/gallery/7.jpg";
-// import img8 from "../images/gallery/8.jpg";
-// import img9 from "../images/gallery/9.jpg";
-// import img10 from "../images/gallery/10.jpg";
-// import img11 from "../images/gallery/11.jpg";
-// import img12 from "../images/gallery/12.jpg";
-// import img13 from "../images/gallery/13.jpg";
-// import img14 from "../images/gallery/14.jpg";
-// import img15 from "../images/gallery/15.jpg";
-// import img16 from "../images/gallery/16.jpg";
-// import img17 from "../images/gallery/17.jpg";
-// import img18 from "../images/gallery/18.jpg";
-// import img19 from "../images/gallery/19.jpg";
-// import img20 from "../images/gallery/20.jpg";
-// import img21 from "../images/gallery/21.jpg";
-// import img22 from "../images/gallery/22.jpg";
-// import img23 from "../images/gallery/23.jpg";
-// import img24 from "../images/gallery/24.jpg";
-// import img25 from "../images/gallery/25.jpg";
-// import img26 from "../images/gallery/26.jpg";
-// import img27 from "../images/gallery/27.jpg";
-// import img28 from "../images/gallery/28.jpg";
-// import img29 from "../images/gallery/29.jpg";
-// import img30 from "../images/gallery/30.jpg";
-// import img31 from "../images/gallery/31.jpg";
-// import img32 from "../images/gallery/32.jpg";
-// import img33 from "../images/gallery/33.jpg";
-// import img34 from "../images/gallery/34.jpg";
-// import img35 from "../images/gallery/35.jpg";
-// import img36 from "../images/gallery/36.jpg";
-// import img37 from "../images/gallery/37.jpg";
-// import img38 from "../images/gallery/38.jpg";
-// import img39 from "../images/gallery/39.jpg";
-// import img40 from "../images/gallery/40.jpg";
-// import img41 from "../images/gallery/41.jpg";
-// import img42 from "../images/gallery/42.jpg";
-// import img43 from "../images/gallery/43.jpg";
-// import img44 from "../images/gallery/44.jpg";
-// import img45 from "../images/gallery/45.jpg";
-// import img46 from "../images/gallery/46.jpg";
-// import img47 from "../images/gallery/47.jpg";
-// import img48 from "../images/gallery/48.jpg";
-// import img49 from "../images/gallery/49.jpg";
-// import img50 from "../images/gallery/50.jpg";
-// import img51 from "../images/gallery/51.jpg";
-// import img52 from "../images/gallery/52.jpg";
-// import img53 from "../images/gallery/53.jpg";
-// import img54 from "../images/gallery/54.jpg";
-// import img55 from "../images/gallery/55.jpg";
-// import img56 from "../images/gallery/56.jpg";
-// import img57 from "../images/gallery/57.jpg";
-// import img58 from "../images/gallery/58.jpg";
-// import img59 from "../images/gallery/59.jpg";
-// import img60 from "../images/gallery/60.jpg";
-// import img61 from "../images/gallery/61.jpg";
-// import img62 from "../images/gallery/62.jpg";
-// import img63 from "../images/gallery/63.jpg";
-// import img64 from "../images/gallery/64.jpg";
-// import img65 from "../images/gallery/65.jpg";
-// import img66 from "../images/gallery/66.jpg";
-// import img67 from "../images/gallery/67.jpg";
-// import img68 from "../images/gallery/68.jpg";
-// import img69 from "../images/gallery/69.jpg";
-// import img70 from "../images/gallery/70.jpg";
-// import img71 from "../images/gallery/71.jpg";
-// import img72 from "../images/gallery/72.jpg";
-// import img73 from "../images/gallery/73.jpg";
-// import img74 from "../images/gallery/74.jpg";
-// import img75 from "../images/gallery/75.jpg";
-// import img76 from "../images/gallery/76.jpg";
-// import img77 from "../images/gallery/77.jpg";
-// import img78 from "../images/gallery/78.jpg";
-// import img79 from "../images/gallery/79.jpg";
-// import img80 from "../images/gallery/80.jpg";
-// import img81 from "../images/gallery/81.jpg";
+import { BurgerMenuItemProps } from "../components/UI/BurgerMenuItem";
 
 export interface navItemData {
   id: number;
@@ -101,10 +14,10 @@ export const NavigationData: navItemData[] = [
   { id: 5, title: "KONTAKT", route: "/contact" },
 ];
 
-export const AboutMenuItemsData: MenuItemProps[] = [
+export const AboutMenuItemsData: BurgerMenuItemProps[] = [
   {
     id: 1,
-    src: cheeser,
+    src: require("../images/cheeser.jpg").default,
     alt: "burger bar menu",
     title: "CHEESER",
     description:
@@ -115,7 +28,7 @@ export const AboutMenuItemsData: MenuItemProps[] = [
   },
   {
     id: 2,
-    src: bacon,
+    src: require("../images/bacon.jpg").default,
     alt: "burger bar menu",
     title: "BACON",
     description:
@@ -126,7 +39,7 @@ export const AboutMenuItemsData: MenuItemProps[] = [
   },
   {
     id: 3,
-    src: ostry,
+    src: require("../images/ostry.jpg").default,
     alt: "burger bar menu",
     title: "OSTRRRY",
     description:
@@ -137,7 +50,7 @@ export const AboutMenuItemsData: MenuItemProps[] = [
   },
   {
     id: 4,
-    src: bbq,
+    src: require("../images/bbq.jpg").default,
     alt: "burger bar menu",
     title: "BBQ",
     description:
@@ -145,6 +58,141 @@ export const AboutMenuItemsData: MenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+  },
+];
+
+export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
+  {
+    id: 1,
+    src: require("../images/cheeser.jpg").default,
+    alt: "burger bar menu",
+    title: "CHEESER",
+    description:
+      "(wołowina, 2x cheddar, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    priceSmall: "14 zł",
+    priceBig: "16 zł",
+    priceSet: "20/22 zł",
+  },
+  {
+    id: 2,
+    src: require("../images/bacon.jpg").default,
+    alt: "burger bar menu",
+    title: "BACON",
+    description:
+      "(wołowina, 2x cheddar, bekon, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    priceSmall: "16 zł",
+    priceBig: "18 zł",
+    priceSet: "22/24 zł",
+  },
+  {
+    id: 3,
+    src: require("../images/ostry.jpg").default,
+    alt: "burger bar menu",
+    title: "OSTRRRY",
+    description:
+      "(wołowina, pikantne salami, cheddar, sałata, papryczki jalapeno, czerwona cebula, pomidor, sos sriracha, sos chiptoe mayo)",
+    priceSmall: "16 zł",
+    priceBig: "18 zł",
+    priceSet: "22/24 zł",
+  },
+  {
+    id: 4,
+    src: require("../images/bbq.jpg").default,
+    alt: "burger bar menu",
+    title: "BBQ",
+    description:
+      "(wołowina, 2x cheddar, bekon, sałata, pieczarki, krążki cebulowe, pomidor, sos chiptoe mayo, sos BBQ)",
+    priceSmall: "16 zł",
+    priceBig: "18 zł",
+    priceSet: "22/24 zł",
+  },
+  {
+    id: 5,
+    src: require("../images/goral.jpg").default,
+    alt: "burger bar menu",
+    title: "GÓRAL",
+    description:
+      "(wołowina, ser wędzony, bekon, sałata, ogórek kwaszony, czerwona cebula, pomidor, ketchup, sos żurawinowo chrzanowy)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
+  },
+  {
+    id: 6,
+    src: require("../images/nacho.jpg").default,
+    alt: "burger bar menu",
+    title: "NACHO",
+    description:
+      "(wołowina, cheddar, nachos, sałata, papryczki jalapeno, czerwona cebula, pomidor, salsa meksykańska, sos chiptoe mayo)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
+  },
+  {
+    id: 7,
+    src: require("../images/americano.jpg").default,
+    alt: "burger bar menu",
+    title: "AMERICANO",
+    description:
+      "(wołowina, 2x cheddar, bekon, krążki cebulowe, sałata, papryczki jalapeno, pomidor, sos pomidorowo-ziołowy, majonez)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
+  },
+  {
+    id: 8,
+    src: require("../images/anglik.jpg").default,
+    alt: "burger bar menu",
+    title: "ANGLIK",
+    description:
+      "(wołowina, 2x cheddar, bekon, jajko sadzone, sałata, czerwona cebula, pomidor, ketchup, sos miodowo-musztardowy)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
+  },
+  {
+    id: 9,
+    src: require("../images/double.jpg").default,
+    alt: "burger bar menu",
+    title: "DOUBLE",
+    description:
+      "(2x wołowina, 2x cheddar, 2x bekon, sałata, ogórek lub papryczki jalapeno, czerwona cebula, pomidor, ketchup, sos majonezowo-piklowy)",
+    priceSmall: "22 zł",
+    priceBig: "24 zł",
+    priceSet: "28/32 zł",
+  },
+  {
+    id: 10,
+    src: require("../images/koko.jpg").default,
+    alt: "burger bar menu",
+    title: "KO KO",
+    description:
+      "(grillowany kurczak, cheddar, sałata rukola, czerwona cebula, pomidor, ogórek, sos BBQ, sos majonezowo-piklowy)",
+    priceSmall: "16 zł",
+    priceBig: "18 zł",
+    priceSet: "22/24 zł",
+  },
+  {
+    id: 11,
+    src: require("../images/vege-ser.jpg").default,
+    alt: "burger bar menu",
+    title: "VEGE SER",
+    description:
+      "(grillowany ser camembert, sałata rukola, szpinak, cukinia, grillowana cebula, pomidor, mix kiełków, ketchup, sos majonezowo-piklowy)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
+  },
+  {
+    id: 12,
+    src: require("../images/vege-burak.jpg").default,
+    alt: "burger bar menu",
+    title: "VEGE BURAK",
+    description:
+      "(kotlet z buraka i kaszy jaglanej z dodatkiem ziaren, sałata rukola, szpinak, cukinia, czerwona cebula, pomidor, mix kiełków, ketchup, sos majonezowo-piklowy)",
+    priceSmall: "18 zł",
+    priceBig: "20 zł",
+    priceSet: "24/26 zł",
   },
 ];
 
@@ -603,3 +651,64 @@ export const containerVariants = {
     },
   },
 };
+
+export interface menuListItem {
+  id: number;
+  src: string;
+  alt: string;
+  title: string;
+  backgroundImgSrc: string;
+}
+
+export const MenuListData: menuListItem[] = [
+  {
+    id: 1,
+    src: require("../images/gallery/1.jpg").default,
+    alt: "Burger Menu Image",
+    title: "Burgery",
+    backgroundImgSrc: require("../images/burgers.jpg").default,
+  },
+  {
+    id: 2,
+    src: require("../images/gallery/31.jpg").default,
+    alt: "Dodatki Menu Image",
+    title: "Dodatki",
+    backgroundImgSrc: require("../images/fries.jpg").default,
+  },
+  {
+    id: 3,
+    src: require("../images/cola.jpg").default,
+    alt: "Napoje Menu Image",
+    title: "Napoje",
+    backgroundImgSrc: require("../images/cola-menu.jpg").default,
+  },
+];
+
+export interface menuAdditiveItem {
+  id: number;
+  description: string;
+  price: string;
+}
+
+export const menuAdditivesItems: menuAdditiveItem[] = [
+  { id: 1, description: "frytki belgijskie", price: "5/10 zł" },
+  { id: 2, description: "frytki z batatów", price: "10 zł" },
+  { id: 3, description: "krążki cebulowe", price: "10 zł" },
+  { id: 4, description: "surówka colesław", price: "5 zł" },
+  {
+    id: 5,
+    description:
+      "sosy (jeden w cenie frytek): ketchup/majonez/BBQ/duński/1000 wysp",
+    price: "1 zł",
+  },
+];
+
+export const menuAdditivesDrinks: menuAdditiveItem[] = [
+  { id: 1, description: "coca cola (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 2, description: "coca cola zero (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 3, description: "fanta (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 4, description: "sprite (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 5, description: "fuzetee (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 6, description: "sok cappy (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 7, description: "kropla beskidu (0.33l/0.5l)", price: "4.5/6 zł" },
+];

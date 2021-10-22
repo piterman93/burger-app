@@ -1,0 +1,43 @@
+.menu__additives_card {
+  background-color: rgb(20, 20, 20);
+  -webkit-box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+  -moz-box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+  box-shadow: 2px 4px 24px 0px rgba(24, 24, 24, 1);
+  border: 2px solid rgba(66, 66, 66, 0.205);
+  width: 30%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  .menu__additives_description {
+    ul {
+      padding: 0;
+      width: 100%;
+
+      li {
+        border-bottom: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 18px;
+        padding-top: 0.75rem;
+
+        span {
+          display: flex;
+          justify-content: flex-end;
+
+          &:nth-child(2) {
+            min-width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

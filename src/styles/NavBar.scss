@@ -73,7 +73,7 @@
             border-top: 1px solid white;
             border-bottom: 1px solid white;
             transform: scaleX(0);
-            transition: transform 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
           }
 
           &:hover::before {

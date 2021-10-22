@@ -1,0 +1,233 @@
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 40px;
+  margin: 3rem 0;
+  border: 2px dotted white;
+  padding: 0.5rem 2rem;
+  text-decoration: underline;
+}
+
+.menu .menu__list {
+  width: 100vh;
+  height: 20vh;
+  background-color: #141414;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu__list ul li {
+  width: 200px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.menu .menu__list ul li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 0px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-bottom: 2px solid #d46d0d;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.menu .menu__list ul li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu .menu__list ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.menu .menu__list ul li span {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.menu .menu__list ul li span.active {
+  color: #d46d0d;
+  border-bottom: 2px solid #d46d0d;
+  font-weight: bold;
+}
+
+.menu .menu__image {
+  height: 300px;
+  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu__image h2 {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  font-family: "Rampart One", cursive;
+}
+
+.menu .menu__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu .menu__card {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu__card ul {
+  list-style: none;
+  width: 80%;
+}
+
+.menu .menu__card ul > li:nth-child(1) .menu__item_wrapper .menu__item {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.menu .menu__card .additives__card {
+  background-color: #141414;
+  -webkit-box-shadow: 2px 4px 24px 0px #181818;
+  box-shadow: 2px 4px 24px 0px #181818;
+  border: 2px solid rgba(66, 66, 66, 0.205);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+
+.menu .menu__card .additives__card h2 {
+  text-decoration: underline;
+}
+
+.menu .menu__card .additives__card .additives__description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu__card .additives__card .additives__description .left {
+  width: 40%;
+}
+
+.menu .menu__card .additives__card .additives__description .left ul {
+  list-style: square;
+}
+
+.menu .menu__card .additives__card .additives__description .right {
+  width: 60%;
+}
+
+.menu .menu__card .additives__card .additives__description .right .additives__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu__card .additives__card .additives__description .right .additives__item span {
+  display: inline-block;
+}
+/*# sourceMappingURL=Menu.css.map */
