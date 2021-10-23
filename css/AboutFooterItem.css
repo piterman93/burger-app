@@ -1,0 +1,52 @@
+.footer__item {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.footer__item h2 {
+  margin-bottom: 1rem;
+}
+
+.footer__item .icon__container {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  border: 1px solid white;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer__item .icon__container a {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.footer__item .icon__container a.facebook {
+  background-color: blue;
+}
+
+.footer__item .icon__container a.instagram {
+  background-color: purple;
+}
+
+.footer__item .icon__container a.google {
+  background-color: red;
+}
+/*# sourceMappingURL=AboutFooterItem.css.map */

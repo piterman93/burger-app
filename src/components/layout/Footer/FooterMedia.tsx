@@ -13,7 +13,12 @@ const FooterMedia: React.FC = () => {
       <span className="underline" />
       <div className="media__icons">
         <div className="icon__container">
-          <a href="https://www.facebook.com/burgerbargorlice" target="_blank">
+          <a
+            href="https://www.facebook.com/burgerbargorlice"
+            target="_blank"
+            aria-label="facebook icon"
+            rel="noreferrer"
+          >
             <FacebookIcon />
           </a>
         </div>
@@ -21,6 +26,8 @@ const FooterMedia: React.FC = () => {
           <a
             href="https://www.instagram.com/burgerbar.gorlice/?hl=pl"
             target="_blank"
+            aria-label="instagram icon"
+            rel="noreferrer"
           >
             <InstagramIcon />
           </a>
@@ -32,6 +39,8 @@ const FooterMedia: React.FC = () => {
         <a
           href="https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1600024,15z/data=!4m7!3m6!1s0x0:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024!9m1!1b1"
           target="_blank"
+          aria-label="google icon"
+          rel="noreferrer"
         >
           <GoogleIcon />
         </a>

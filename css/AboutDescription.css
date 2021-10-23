@@ -1,0 +1,104 @@
+.about__description {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  min-height: 600px;
+}
+
+.about__description .about__description_left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid rgba(161, 151, 6, 0.596);
+  padding: 0 3rem;
+  height: 500px;
+}
+
+.about__description .about__description_left h2 {
+  color: #d46d0d;
+  margin: 0;
+  font-size: 34px;
+}
+
+.about__description .about__description_left h3 {
+  font-weight: normal;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.about__description .about__description_left p {
+  margin-top: 2rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.about__description .about__description_left button {
+  margin-bottom: 2rem;
+}
+
+.about__description .about__description_right {
+  width: 50%;
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.about__description .about__description_right .image__wrapper {
+  -webkit-box-shadow: 0px 0px 6px 2px #b2b2d6;
+  box-shadow: 0px 0px 6px 2px #b2b2d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__description .about__description_right .image__wrapper:nth-child(1) {
+  width: 300px;
+  height: 400px;
+  background-color: #c8cbe9;
+  position: absolute;
+  top: -2rem;
+  left: 5rem;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.about__description .about__description_right .image__wrapper:nth-child(2) {
+  width: 360px;
+  height: 450px;
+  background-color: #c8cbe9;
+  position: absolute;
+  top: 6rem;
+  left: 16rem;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.about__description .about__description_right .image__wrapper img {
+  width: 98%;
+  height: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=AboutDescription.css.map */

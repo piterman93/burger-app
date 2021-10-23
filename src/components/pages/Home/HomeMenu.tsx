@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "../../../styles/HomeMenu.scss";
 
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Card from "../../UI/Card";
 import BurgerMenuItem from "../../UI/BurgerMenuItem";
-import { AboutMenuItemsData } from "../../../utils/constData";
+import ButtonLink from "../../UI/ButtonLink";
 import BurgerMenuItemTitle from "../../UI/BurgerMenuItemTitle";
+
+import { AboutMenuItemsData } from "../../../utils/constData";
 
 const HomeMenu: React.FC = () => {
   const menuData = AboutMenuItemsData.map((item) => (
@@ -37,15 +37,7 @@ const HomeMenu: React.FC = () => {
             {menuData}
           </ul>
         </Card>
-        <Link to="/menu">
-          <button className="button button__menu">
-            <span>CAŁE MENU</span>
-            <div className="arrow">
-              Let's go!
-              <ArrowRightAltIcon />
-            </div>
-          </button>
-        </Link>
+        <ButtonLink title="CAŁE MENU" route="/menu" />
       </div>
     </div>
   );

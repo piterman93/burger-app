@@ -27,10 +27,16 @@
       }
 
       button {
-        background-color: rgb(20, 20, 20);
+        background-color: transparent;
         color: white;
         border: none;
         cursor: pointer;
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .icon {
           transition: 0.3s all ease;

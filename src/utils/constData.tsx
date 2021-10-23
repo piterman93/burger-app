@@ -1,4 +1,5 @@
 import { BurgerMenuItemProps } from "../components/UI/BurgerMenuItem";
+import { AboutFooterItemProps } from "../components/pages/About/AboutFooterItem";
 
 export interface navItemData {
   id: number;
@@ -711,4 +712,25 @@ export const menuAdditivesDrinks: menuAdditiveItem[] = [
   { id: 5, description: "fuzetee (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 6, description: "sok cappy (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 7, description: "kropla beskidu (0.33l/0.5l)", price: "4.5/6 zł" },
+];
+
+export const AboutFooterItemsData: AboutFooterItemProps[] = [
+  {
+    id: 1,
+    title: "Śledź nas na facebooku",
+    href: "https://www.facebook.com/burgerbargorlice",
+    className: "facebook",
+  },
+  {
+    id: 2,
+    title: "Obserwuj nas na Instagramie",
+    href: "https://www.instagram.com/burgerbar/",
+    className: "instagram",
+  },
+  {
+    id: 3,
+    title: "Podziel się swoją opinią",
+    href: "https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1600024,15z/data=!4m7!3m6!1s0x0:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024!9m1!1b1",
+    className: "google",
+  },
 ];

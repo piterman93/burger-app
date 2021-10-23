@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "../../../styles/HomeAbout.scss";
 
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import aboutImage from "../../../images/about-image.jpg";
+import ButtonLink from "../../UI/ButtonLink";
 
 const HomeAbout: React.FC = () => {
   return (
@@ -22,15 +21,7 @@ const HomeAbout: React.FC = () => {
             lokalnej piekarni, do tego belgijskie frytki smażone tradycyjnie na
             tłuszczu wołowym. Mamy w menu również burgery wegetariańskie.
           </p>
-          <Link to="/about-us">
-            <button className="button button__menu">
-              <span>O NAS</span>
-              <div className="arrow">
-                Let's go!
-                <ArrowRightAltIcon />
-              </div>
-            </button>
-          </Link>
+          <ButtonLink title="O NAS" route="/about-us" />
         </div>
       </div>
     </div>

@@ -26,7 +26,11 @@ const Footer: React.FC = () => {
       <div className="footer__bottom">
         <p>Copyright© 2021</p>
         <span>
-          <a href="https://www.linkedin.com/in/piotrmaniak93/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/piotrmaniak93/"
+            target="_blank"
+            rel="noopener"
+          >
             Piotr Maniak
           </a>
         </span>

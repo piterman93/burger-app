@@ -1,7 +1,7 @@
 .additives__card {
   background-color: #141414;
-  -webkit-box-shadow: 2px 4px 24px 0px #181818;
-  box-shadow: 2px 4px 24px 0px #181818;
+  -webkit-box-shadow: 0px 0px 10px 4px #181818;
+  box-shadow: 0px 0px 10px 4px #181818;
   border: 2px solid rgba(66, 66, 66, 0.205);
   width: 50%;
   display: -webkit-box;
@@ -42,6 +42,10 @@
 }
 
 .additives__card .additives__description .left ul {
+  font-size: 17px;
+}
+
+.additives__card .additives__description .left ul {
   list-style: square;
 }
 
@@ -60,5 +64,6 @@
 
 .additives__card .additives__description .right .additives__item span {
   display: inline-block;
+  font-size: 17px;
 }
 /*# sourceMappingURL=MenuBurgersCard.css.map */

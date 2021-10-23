@@ -44,6 +44,7 @@
 
 .footer__wrapper .footer__bottom span {
   margin-left: 0.5rem;
+  font-size: 18px;
 }
 
 .footer__wrapper .footer__bottom span a {
@@ -51,6 +52,6 @@
 }
 
 .footer__wrapper .footer__bottom span a:hover {
-  color: rgba(88, 88, 231, 0.555);
+  color: #d46d0d;
 }
 /*# sourceMappingURL=Footer.css.map */

@@ -34,6 +34,7 @@ const Map: React.FC = () => {
             <a
               href="https://www.google.com/maps?ll=49.65463,21.16&z=17&t=m&hl=pl-PL&gl=US&mapclient=apiv3&cid=11482319422438351441"
               target="_blank"
+              rel="noreferrer"
             >
               Zobacz w mapach Google
             </a>

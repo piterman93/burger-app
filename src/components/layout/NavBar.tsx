@@ -70,12 +70,19 @@ const NavBar: React.FC = () => {
           <span>+48 735 073 060</span>
         </div>
         <div className="navigation__socialMedia">
-          <a href="https://www.facebook.com/burgerbargorlice" target="_blank">
+          <a
+            href="https://www.facebook.com/burgerbargorlice"
+            target="_blank"
+            aria-label="facebook icon"
+            rel="noopener"
+          >
             <FacebookIcon />
           </a>
           <a
             href="https://www.instagram.com/burgerbar.gorlice/?hl=pl"
             target="_blank"
+            aria-label="instagram icon"
+            rel="noopener"
           >
             <InstagramIcon />
           </a>

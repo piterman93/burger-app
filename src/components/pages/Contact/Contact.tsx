@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-// import {
-//   GoogleMap,
-//   withScriptjs,
-//   withGoogleMap,
-//   Marker,
-// } from "react-google-maps";
 
 import "../../../styles/Contact.scss";
 import "../../../styles/FooterContact.scss";
@@ -30,7 +24,7 @@ const Contact: React.FC = () => {
       className="contact__wrapper"
     >
       <div className="description">
-        <h1>Zapraszamy do kontaktu!</h1>
+        <h1>KONTAKT</h1>
         <h2>Masz pytania?</h2>
         <p>Napisz do nas lub zadźwoń - chętnie odpowiemy!</p>
       </div>

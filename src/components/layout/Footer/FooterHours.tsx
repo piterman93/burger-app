@@ -22,7 +22,10 @@ const FooterHours: React.FC = () => {
       activeDay = "color";
     }
     return (
-      <div className={`day ${activeDay} ${!showWeek ? "inactive" : ""}`}>
+      <div
+        className={`day ${activeDay} ${!showWeek ? "inactive" : ""}`}
+        key={day.id}
+      >
         <span className="left">{day.title}</span>
         <span>{day.hours}</span>
       </div>
@@ -41,7 +44,7 @@ const FooterHours: React.FC = () => {
           <span className={`${showWeek ? "inactive" : ""}`}>
             {todayDay?.hours}
           </span>
-          <button onClick={showWeekHandler}>
+          <button onClick={showWeekHandler} aria-label="toggle accordion">
             <KeyboardArrowDownIcon
               className={`icon ${showWeek ? "active" : ""}`}
             />

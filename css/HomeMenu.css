@@ -21,19 +21,21 @@
 }
 
 .home__wrapper .home__menu .home__menu_description h1 {
-  text-decoration: underline;
+  border-bottom: 3px solid rgba(129, 138, 11, 0.596);
+}
+
+.home__wrapper .home__menu .home__menu_description h2 {
+  color: #d46d0d;
 }
 
 .home__wrapper .home__menu .home__menu_description p {
   margin-top: 0;
+  font-size: 18px;
+  opacity: 0.7;
 }
 
 .home__wrapper .home__menu .home__menu_description .home__menu_card {
   width: 80%;
-  background-color: #141414;
-  -webkit-box-shadow: 2px 4px 24px 0px #181818;
-  box-shadow: 2px 4px 24px 0px #181818;
-  border: 2px solid rgba(66, 66, 66, 0.205);
   padding-bottom: 4rem;
   margin-bottom: 2rem;
 }
