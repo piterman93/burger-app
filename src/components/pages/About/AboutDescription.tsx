@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../../styles/AboutDescription.scss"
+import "../../../styles/AboutDescription.scss";
 
 import ButtonLink from "../../UI/ButtonLink";
 
@@ -8,8 +8,8 @@ const AboutDescription: React.FC = () => {
   return (
     <div className="about__description">
       <div className="about__description_left">
-        <h3>Dowiedz się więcej</h3>
-        <h2>o naszej burgerowni</h2>
+        <h2>Dowiedz się więcej</h2>
+        <h3>o naszej burgerowni</h3>
         <p>
           BurgerBar to restauracja na terenie Gorlic, która powstała z myślą o
           ludziach z zamiłowaniem do pysznego jedzenia. Naszą specjalności są

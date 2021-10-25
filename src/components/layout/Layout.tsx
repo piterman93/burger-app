@@ -11,10 +11,15 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Layout: React.FC = () => {
   const [showArrow, setShowArrow] = useState(false);
+  const [opacity, setOpacity] = useState(0.8);
 
-  const showArrowHandler = () => {
+  const opacityAndArrowHandler = () => {
     if (window.scrollY > 600) setShowArrow(true);
     else setShowArrow(false);
+
+    const newScrollValue = window.scrollY;
+    const newOpacity = 1 - newScrollValue / 450;
+    setOpacity(newOpacity);
   };
 
   const scrollTopHandler = () => {
@@ -22,15 +27,15 @@ const Layout: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", showArrowHandler);
+    window.addEventListener("scroll", opacityAndArrowHandler);
     return () => {
-      window.removeEventListener("scroll", showArrowHandler);
+      window.removeEventListener("scroll", opacityAndArrowHandler);
     };
   }, [showArrow]);
   return (
     <div className="app">
-      <header>
-        <NavBar />
+      <NavBar />
+      <header style={{ opacity: opacity }}>
         <Header />
       </header>
       <main>

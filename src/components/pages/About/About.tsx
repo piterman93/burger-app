@@ -20,7 +20,7 @@ const About: React.FC = () => {
   ));
 
   useEffect(() => {
-    window.scrollTo(0, 520);
+    window.scrollTo(0, 470);
   }, []);
   return (
     <motion.div

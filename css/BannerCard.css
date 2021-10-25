@@ -55,6 +55,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 0.3rem;
+  background-color: #fff;
 }
 
 .home__wrapper .home__card .home__card_description .home__card_logo .home__logo_container img {

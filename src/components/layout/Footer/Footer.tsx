@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           <a
             href="https://www.linkedin.com/in/piotrmaniak93/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             Piotr Maniak
           </a>

@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
     const newScrollValue = window.pageYOffset;
     if (oldScrollValue - newScrollValue > 0) {
       setNavActive(true);
-    } else if (oldScrollValue - newScrollValue < 0 && window.scrollY > 600) {
+    } else if (oldScrollValue - newScrollValue < 0 && window.scrollY > 500) {
       setNavActive(false);
     }
     if (newScrollValue > 495) {
@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
             href="https://www.facebook.com/burgerbargorlice"
             target="_blank"
             aria-label="facebook icon"
-            rel="noopener"
+            rel="noreferrer"
           >
             <FacebookIcon />
           </a>
@@ -82,7 +82,7 @@ const NavBar: React.FC = () => {
             href="https://www.instagram.com/burgerbar.gorlice/?hl=pl"
             target="_blank"
             aria-label="instagram icon"
-            rel="noopener"
+            rel="noreferrer"
           >
             <InstagramIcon />
           </a>
