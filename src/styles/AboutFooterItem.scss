@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .footer__item {
   border: 2px solid white;
   display: flex;
@@ -5,9 +7,19 @@
   align-items: center;
   justify-content: space-around;
   padding: 0 2rem;
+  width: 300px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 0.5rem 0;
+  }
 
   h2 {
     margin-bottom: 1rem;
+    text-align: center;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   .icon__container {
@@ -17,7 +29,6 @@
     border: 1px solid white;
     margin-bottom: 1rem;
     box-shadow: none;
-    transform: scale(1);
 
     a {
       border: none;

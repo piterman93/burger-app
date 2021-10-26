@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
           <WrappedMap
             googleMapURL={URL}
             loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `50vh` }} />}
+            containerElement={<div style={{ height: `60vh` }} />}
             mapElement={<div style={{ height: `100%` }} />}
           ></WrappedMap>
         </div>

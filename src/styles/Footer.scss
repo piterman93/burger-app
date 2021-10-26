@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .footer__wrapper {
   width: 100%;
   min-height: 60vh;
@@ -5,12 +7,31 @@
   flex-direction: column;
 
   .footer__top {
-    min-height: 55vh;
+    min-height: 50vh;
     width: 100%;
     background-color: rgb(20, 20, 20);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 2rem;
+
+    @include mobile {
+      align-items: center;
+    }
+
+    h3 {
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .footer__bottom {

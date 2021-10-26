@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .home__wrapper {
   .home__about {
     min-height: 600px;
@@ -5,11 +7,27 @@
     display: flex;
     padding: 0 4rem;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+      position: relative;
+      padding: 0;
+    }
+
     .about__image {
       width: 45%;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+        position: relative;
+        top: 2rem;
+        width: 80%;
+        height: 400px;
+      }
 
       .about__image_card {
         height: 35vw;
@@ -21,6 +39,11 @@
         -webkit-box-shadow: 0px 0px 6px 4px rgba(195, 193, 193, 0.48);
         -moz-box-shadow: 0px 0px 6px 4px rgba(195, 193, 193, 0.48);
         box-shadow: 0px 0px 6px 4px rgba(195, 193, 193, 0.48);
+
+        @include mobile {
+          width: 300px;
+          height: 350px;
+        }
 
         img {
           width: 98%;
@@ -38,8 +61,21 @@
       justify-content: center;
       text-align: center;
 
+      @include mobile {
+        position: relative;
+        top: 2rem;
+        width: 80%;
+        min-height: 400px;
+        margin-bottom: 3rem;
+        padding: 0;
+      }
+
       h1 {
         border-bottom: 3px solid rgba(129, 138, 11, 0.596);
+
+        @include mobile {
+          width: 90%;
+        }
       }
 
       .about__description_wrapper {
@@ -48,6 +84,10 @@
         align-items: center;
         justify-content: center;
         width: 70%;
+
+        @include mobile {
+          width: 80%;
+        }
 
         p {
           font-size: 18px;

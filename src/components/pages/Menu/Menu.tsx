@@ -15,6 +15,7 @@ import { menuListItem } from "../../../utils/constData";
 import BurgerMenuItemTitle from "../../UI/BurgerMenuItemTitle";
 import MenuBurgersCard from "./MenuBurgersCard";
 import MenuAdditives from "./MenuAdditives";
+import Card from "../../UI/Card";
 
 const Menu: React.FC = () => {
   const [activeMenuItem, setActiveMenuItem] = useState<menuListItem>(
@@ -58,10 +59,12 @@ const Menu: React.FC = () => {
   const content =
     (activeMenuItem.id === 1 && (
       <>
-        <ul>
-          <BurgerMenuItemTitle />
-          {burgersData}
-        </ul>
+        <Card className="home__menu_card">
+          <ul className="home__menu_ul">
+            <BurgerMenuItemTitle />
+            {burgersData}
+          </ul>
+        </Card>
         <MenuBurgersCard />
       </>
     )) ||

@@ -6,7 +6,7 @@ import ButtonLink from "../../UI/ButtonLink";
 
 const AboutDescription: React.FC = () => {
   return (
-    <div className="about__description">
+    <div className="about__description_info">
       <div className="about__description_left">
         <h2>Dowiedz się więcej</h2>
         <h3>o naszej burgerowni</h3>

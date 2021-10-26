@@ -32,7 +32,7 @@ const HomeMenu: React.FC = () => {
           bułki. Nie czekaj i spróbuj już dziś!
         </p>
         <Card className="home__menu_card">
-          <ul>
+          <ul className="home__menu_ul">
             <BurgerMenuItemTitle />
             {menuData}
           </ul>

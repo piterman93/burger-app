@@ -1,3 +1,5 @@
+@import "./index.scss";
+
 .home__wrapper {
   .home__menu {
     min-height: 500px;
@@ -10,32 +12,88 @@
       align-items: center;
       justify-content: center;
 
+      @include mobile {
+        width: 90%;
+        margin: auto;
+      }
+
       h1 {
         border-bottom: 3px solid rgba(129, 138, 11, 0.596);
+        text-align: center;
+
+        @include mobile {
+          width: 80%;
+        }
       }
 
       h2 {
         color: rgb(212, 109, 13);
+        text-align: center;
       }
 
       p {
         margin-top: 0;
         font-size: 18px;
         opacity: 0.7;
+        width: 80%;
+        text-align: center;
       }
 
       .home__menu_card {
         width: 80%;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 0;
         margin-bottom: 2rem;
+        height: auto;
 
-        ul {
+        @include mobile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          padding-bottom: 1rem;
+          width: 95%;
+        }
+
+        .home__menu_ul {
           list-style: none;
+          display: flex;
+          flex-direction: column;
+
+          @include mobile {
+            width: 100%;
+          }
+
+          @media screen and (max-width: 1200px) {
+            padding: 0;
+          }
 
           > li:nth-child(1) {
             .menu__item_wrapper {
+              @media screen and (max-width: 1200px) {
+                min-height: 90px;
+              }
+
               .menu__item {
                 transform: translateX(100px);
+
+                .menu__item_left {
+                  @media screen and (max-width: 1200px) {
+                    transform: translate(85px);
+                  }
+
+                  @include mobile {
+                    transform: translate(0);
+                  }
+                }
+
+                @media screen and (max-width: 1200px) {
+                  transform: translate(0px);
+                }
+
+                @include mobile {
+                  transform: translate(0);
+                }
               }
             }
           }

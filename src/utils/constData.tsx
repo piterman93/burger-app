@@ -699,7 +699,7 @@ export const menuAdditivesItems: menuAdditiveItem[] = [
   {
     id: 5,
     description:
-      "sosy (jeden w cenie frytek): ketchup/majonez/BBQ/duński/1000 wysp",
+      "sosy (jeden w cenie frytek): ketchup/ majonez/ BBQ/ duński/ 1000 wysp",
     price: "1 zł",
   },
 ];
