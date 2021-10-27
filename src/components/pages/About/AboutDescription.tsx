@@ -21,7 +21,7 @@ const AboutDescription: React.FC = () => {
           naszej restauracji każdy znajdzie coś dla siebie. Oprócz klasycznych
           burgerów wołowych, w ofercie znajdują się również pozycje
           vegetariańskie. BurgerBar to miejsce, jakiego w Gorlicah brakowało.
-          Sprawdź naszą ofertę i przekonaj się sam! "
+          Sprawdź naszą ofertę i przekonaj się sam!
         </p>
         <ButtonLink title="MENU" route="/menu" />
       </div>

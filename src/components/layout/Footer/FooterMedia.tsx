@@ -18,6 +18,7 @@ const FooterMedia: React.FC = () => {
             target="_blank"
             aria-label="facebook icon"
             rel="noreferrer"
+            className="facebook"
           >
             <FacebookIcon />
           </a>
@@ -28,6 +29,7 @@ const FooterMedia: React.FC = () => {
             target="_blank"
             aria-label="instagram icon"
             rel="noreferrer"
+            className="instagram"
           >
             <InstagramIcon />
           </a>
@@ -41,6 +43,7 @@ const FooterMedia: React.FC = () => {
           target="_blank"
           aria-label="google icon"
           rel="noreferrer"
+          className="google"
         >
           <GoogleIcon />
         </a>
