@@ -12,9 +12,9 @@ const MenuBurgersCard: React.FC = () => {
         <div className="left">
           <h3>Każdy zestaw zawiera:</h3>
           <ul>
-            <li>burger</li>
-            <li>frytki</li>
-            <li>surówka colesław</li>
+            <li>✔ burger</li>
+            <li>✔ frytki</li>
+            <li>✔ surówka colesław</li>
           </ul>
         </div>
         <div className="right">

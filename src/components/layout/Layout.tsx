@@ -6,12 +6,14 @@ import Footer from "./Footer/Footer";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Section from "./Section";
+import BurgerNavBar from "./BurgerNavBar";
 
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Layout: React.FC = () => {
   const [showArrow, setShowArrow] = useState(false);
   const [opacity, setOpacity] = useState(0.8);
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
   const opacityAndArrowHandler = () => {
     if (window.scrollY > 600) setShowArrow(true);
@@ -26,15 +28,24 @@ const Layout: React.FC = () => {
     window.scrollTo(0, 0);
   };
 
+  const documentWidthHandler = () => {
+    const width = document.body.clientWidth;
+    if (width < 1200) setHamburgerMenu(true);
+    else setHamburgerMenu(false);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", opacityAndArrowHandler);
+    window.addEventListener("resize", documentWidthHandler);
     return () => {
       window.removeEventListener("scroll", opacityAndArrowHandler);
+      window.addEventListener("resize", documentWidthHandler);
     };
   }, [showArrow]);
   return (
     <div className="app">
-      <NavBar />
+      {hamburgerMenu && <BurgerNavBar />}
+      {!hamburgerMenu && <NavBar />}
       <header style={{ opacity: opacity }}>
         <Header />
       </header>

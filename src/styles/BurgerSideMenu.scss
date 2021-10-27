@@ -1,0 +1,132 @@
+@import "./index.scss";
+
+.side__menu {
+  height: 85vh;
+  width: 300px;
+  position: fixed;
+  top: 15vh;
+  right: -300px;
+  bottom: 0;
+  z-index: 111;
+  transition: 0.4s all ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Alfa Slab One", cursive;
+
+  @media screen and (max-width: 350px) {
+    max-width: 250px;
+  }
+
+  &.active {
+    background-color: black;
+    transform: translateX(-300px);
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 80%;
+      height: auto;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          width: 100%;
+          text-align: start;
+          padding-left: 3rem;
+          font-size: 16px;
+          padding: 1rem 0;
+          padding-left: 3rem;
+          letter-spacing: 0.2rem;
+          transform: translateX(10px);
+          transition: 0.2s all ease;
+
+          @include mobile {
+            font-size: 14px;
+          }
+
+          &:hover {
+            transform: translateX(0px);
+          }
+
+          &.active {
+            background-color: rgb(212, 109, 13);
+            color: black;
+
+            &:hover {
+              transform: translateX(10px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .side__menu__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .contact {
+      display: flex;
+      align-items: center;
+      color: white;
+      margin-bottom: 2rem;
+      font-size: 15px;
+
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+
+    .socialMedia {
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        color: white;
+        transition: 0.1s all ease;
+        opacity: 0.8;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.25rem;
+        border-radius: 4px;
+
+        &:first-child {
+          &:hover {
+            background-color: blue;
+            opacity: 1;
+          }
+        }
+
+        &:last-child {
+          &:hover {
+            background-color: rgb(131, 14, 131);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

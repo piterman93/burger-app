@@ -14,13 +14,6 @@ const NavBar: React.FC = () => {
   const [navActive, setNavActive] = useState(true);
   const [navTransparent, setNavTransparent] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("scroll", controlHeaderHandler);
-    return () => {
-      window.removeEventListener("scroll", controlHeaderHandler);
-    };
-  }, []);
-
   let oldScrollValue: number;
 
   const controlHeaderHandler = () => {
@@ -37,6 +30,13 @@ const NavBar: React.FC = () => {
     }
     oldScrollValue = newScrollValue;
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlHeaderHandler);
+    return () => {
+      window.removeEventListener("scroll", controlHeaderHandler);
+    };
+  }, []);
 
   const navClasses = `navigation ${navActive ? "" : "inactive"} ${
     navTransparent ? "" : "black"

@@ -49,6 +49,11 @@
 
       h1 {
         text-align: center;
+
+        @include mobile {
+          margin-top: 1.5rem;
+          font-size: 26px;
+        }
       }
     }
   }
