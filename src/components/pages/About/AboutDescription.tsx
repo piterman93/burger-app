@@ -1,28 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/AboutDescription.scss";
 
 import ButtonLink from "../../UI/ButtonLink";
 
 const AboutDescription: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="about__description_info">
       <div className="about__description_left">
-        <h2>Dowiedz się więcej</h2>
-        <h3>o naszej burgerowni</h3>
-        <p>
-          BurgerBar to restauracja na terenie Gorlic, która powstała z myślą o
-          ludziach z zamiłowaniem do pysznego jedzenia. Naszą specjalności są
-          burgery, których w obecnej ofercie posiadamy aż 12. Dodatkowo, w
-          każdym miesiącu do menu dołączmy nasz autorski "burger miesiąca".
-          Stawiamy na ciekawe i nowe połączenia (w szczególności burgery
-          miesiąca), oraz jakość i swieżość skłądników, dzięki czemu nasi
-          klienci mają okazję próbować smaków, których dotychczas nie znali. W
-          naszej restauracji każdy znajdzie coś dla siebie. Oprócz klasycznych
-          burgerów wołowych, w ofercie znajdują się również pozycje
-          vegetariańskie. BurgerBar to miejsce, jakiego w Gorlicah brakowało.
-          Sprawdź naszą ofertę i przekonaj się sam!
-        </p>
+        <h2>{t("ST7")}</h2>
+        <h3>{t("ST8")}</h3>
+        <p>{t("ST9")}</p>
         <ButtonLink title="MENU" route="/menu" />
       </div>
       <div className="about__description_right">

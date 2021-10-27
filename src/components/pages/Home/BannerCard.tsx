@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/BannerCard.scss";
 
@@ -9,6 +10,7 @@ import Card from "../../UI/Card";
 import ButtonLink from "../../UI/ButtonLink";
 
 const BannerCard: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <Card className="home__card">
       <div className="card__image_container">
@@ -22,8 +24,8 @@ const BannerCard: React.FC = () => {
           <span>BURGER</span>
           <span>BAR</span>
         </div>
-        <h1>Najlepsze burgery w Gorlicach!</h1>
-        <h2>Sprawdź naszą ofertę</h2>
+        <h1>{t("ST15")}</h1>
+        <h2>{t("ST16")}</h2>
         <ButtonLink title="MENU" route="/menu" />
       </div>
       <div className="card__image_container">

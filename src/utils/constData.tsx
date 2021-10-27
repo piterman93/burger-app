@@ -7,12 +7,20 @@ export interface navItemData {
   route: string;
 }
 
+// export const NavigationData: navItemData[] = [
+//   { id: 1, title: "START", route: "/home" },
+//   { id: 2, title: "O NAS", route: "/about-us" },
+//   { id: 3, title: "MENU", route: "/menu" },
+//   { id: 4, title: "GALERIA", route: "/gallery" },
+//   { id: 5, title: "KONTAKT", route: "/contact" },
+// ];
+
 export const NavigationData: navItemData[] = [
-  { id: 1, title: "START", route: "/home" },
-  { id: 2, title: "O NAS", route: "/about-us" },
-  { id: 3, title: "MENU", route: "/menu" },
-  { id: 4, title: "GALERIA", route: "/gallery" },
-  { id: 5, title: "KONTAKT", route: "/contact" },
+  { id: 1, title: "ST67", route: "/home" },
+  { id: 2, title: "ST6", route: "/about-us" },
+  { id: 3, title: "ST68", route: "/menu" },
+  { id: 4, title: "ST19", route: "/gallery" },
+  { id: 5, title: "ST10", route: "/contact" },
 ];
 
 export const AboutMenuItemsData: BurgerMenuItemProps[] = [
@@ -21,8 +29,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     src: require("../images/cheeser.jpg").default,
     alt: "burger bar menu",
     title: "CHEESER",
-    description:
-      "(wołowina, 2x cheddar, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    description: "ST44",
     priceSmall: "14 zł",
     priceBig: "16 zł",
     priceSet: "20/22 zł",
@@ -32,8 +39,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     src: require("../images/bacon.jpg").default,
     alt: "burger bar menu",
     title: "BACON",
-    description:
-      "(wołowina, 2x cheddar, bekon, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    description: "ST45",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -43,8 +49,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     src: require("../images/ostry.jpg").default,
     alt: "burger bar menu",
     title: "OSTRRRY",
-    description:
-      "(wołowina, pikantne salami, cheddar, sałata, papryczki jalapeno, czerwona cebula, pomidor, sos sriracha, sos chiptoe mayo)",
+    description: "ST46",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -54,8 +59,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     src: require("../images/bbq.jpg").default,
     alt: "burger bar menu",
     title: "BBQ",
-    description:
-      "(wołowina, 2x cheddar, bekon, sałata, pieczarki, krążki cebulowe, pomidor, sos chiptoe mayo, sos BBQ)",
+    description: "ST47",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -68,8 +72,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/cheeser.jpg").default,
     alt: "burger bar menu",
     title: "CHEESER",
-    description:
-      "(wołowina, 2x cheddar, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    description: "ST44",
     priceSmall: "14 zł",
     priceBig: "16 zł",
     priceSet: "20/22 zł",
@@ -79,8 +82,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/bacon.jpg").default,
     alt: "burger bar menu",
     title: "BACON",
-    description:
-      "(wołowina, 2x cheddar, bekon, sałata, ogórek, czerwona cebula, pomidor, ketchup, sos majonezowo piklowy)",
+    description: "ST45",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -90,8 +92,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/ostry.jpg").default,
     alt: "burger bar menu",
     title: "OSTRRRY",
-    description:
-      "(wołowina, pikantne salami, cheddar, sałata, papryczki jalapeno, czerwona cebula, pomidor, sos sriracha, sos chiptoe mayo)",
+    description: "ST46",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -101,8 +102,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/bbq.jpg").default,
     alt: "burger bar menu",
     title: "BBQ",
-    description:
-      "(wołowina, 2x cheddar, bekon, sałata, pieczarki, krążki cebulowe, pomidor, sos chiptoe mayo, sos BBQ)",
+    description: "ST47",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -112,8 +112,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/goral.jpg").default,
     alt: "burger bar menu",
     title: "GÓRAL",
-    description:
-      "(wołowina, ser wędzony, bekon, sałata, ogórek kwaszony, czerwona cebula, pomidor, ketchup, sos żurawinowo chrzanowy)",
+    description: "ST48",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -123,8 +122,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/nacho.jpg").default,
     alt: "burger bar menu",
     title: "NACHO",
-    description:
-      "(wołowina, cheddar, nachos, sałata, papryczki jalapeno, czerwona cebula, pomidor, salsa meksykańska, sos chiptoe mayo)",
+    description: "ST49",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -134,8 +132,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/americano.jpg").default,
     alt: "burger bar menu",
     title: "AMERICANO",
-    description:
-      "(wołowina, 2x cheddar, bekon, krążki cebulowe, sałata, papryczki jalapeno, pomidor, sos pomidorowo-ziołowy, majonez)",
+    description: "ST50",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -145,8 +142,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/anglik.jpg").default,
     alt: "burger bar menu",
     title: "ANGLIK",
-    description:
-      "(wołowina, 2x cheddar, bekon, jajko sadzone, sałata, czerwona cebula, pomidor, ketchup, sos miodowo-musztardowy)",
+    description: "ST51",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -156,8 +152,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/double.jpg").default,
     alt: "burger bar menu",
     title: "DOUBLE",
-    description:
-      "(2x wołowina, 2x cheddar, 2x bekon, sałata, ogórek lub papryczki jalapeno, czerwona cebula, pomidor, ketchup, sos majonezowo-piklowy)",
+    description: "ST52",
     priceSmall: "22 zł",
     priceBig: "24 zł",
     priceSet: "28/32 zł",
@@ -167,8 +162,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/koko.jpg").default,
     alt: "burger bar menu",
     title: "KO KO",
-    description:
-      "(grillowany kurczak, cheddar, sałata rukola, czerwona cebula, pomidor, ogórek, sos BBQ, sos majonezowo-piklowy)",
+    description: "ST53",
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
@@ -178,8 +172,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/vege-ser.jpg").default,
     alt: "burger bar menu",
     title: "VEGE SER",
-    description:
-      "(grillowany ser camembert, sałata rukola, szpinak, cukinia, grillowana cebula, pomidor, mix kiełków, ketchup, sos majonezowo-piklowy)",
+    description: "ST54",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -189,8 +182,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     src: require("../images/vege-burak.jpg").default,
     alt: "burger bar menu",
     title: "VEGE BURAK",
-    description:
-      "(kotlet z buraka i kaszy jaglanej z dodatkiem ziaren, sałata rukola, szpinak, cukinia, czerwona cebula, pomidor, mix kiełków, ketchup, sos majonezowo-piklowy)",
+    description: "ST55",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
@@ -204,13 +196,13 @@ export interface weekDay {
 }
 
 export const weekDays: weekDay[] = [
-  { id: 1, title: "Poniedziałek: ", hours: "10:00 - 22:00" },
-  { id: 2, title: "Wtorek: ", hours: "10:00 - 22:00" },
-  { id: 3, title: "Środa: ", hours: "10:00 - 22:00" },
-  { id: 4, title: "Czwartek: ", hours: "10:00 - 22:00" },
-  { id: 5, title: "Piątek: ", hours: "10:00 - 22:00" },
-  { id: 6, title: "Sobota: ", hours: "10:00 - 22:00" },
-  { id: 7, title: "Niedziela: ", hours: "14:00 - 22:00" },
+  { id: 1, title: "ST37", hours: "10:00 - 22:00" },
+  { id: 2, title: "ST38", hours: "10:00 - 22:00" },
+  { id: 3, title: "ST39", hours: "10:00 - 22:00" },
+  { id: 4, title: "ST40", hours: "10:00 - 22:00" },
+  { id: 5, title: "ST41", hours: "10:00 - 22:00" },
+  { id: 6, title: "ST42", hours: "10:00 - 22:00" },
+  { id: 7, title: "ST43", hours: "14:00 - 22:00" },
 ];
 
 export interface galleryItem {
@@ -666,21 +658,21 @@ export const MenuListData: menuListItem[] = [
     id: 1,
     src: require("../images/gallery/1.jpg").default,
     alt: "Burger Menu Image",
-    title: "Burgery",
+    title: "ST56",
     backgroundImgSrc: require("../images/burgers.jpg").default,
   },
   {
     id: 2,
     src: require("../images/gallery/31.jpg").default,
     alt: "Dodatki Menu Image",
-    title: "Dodatki",
+    title: "ST57",
     backgroundImgSrc: require("../images/fries.jpg").default,
   },
   {
     id: 3,
     src: require("../images/cola.jpg").default,
     alt: "Napoje Menu Image",
-    title: "Napoje",
+    title: "ST58",
     backgroundImgSrc: require("../images/cola-menu.jpg").default,
   },
 ];
@@ -692,14 +684,13 @@ export interface menuAdditiveItem {
 }
 
 export const menuAdditivesItems: menuAdditiveItem[] = [
-  { id: 1, description: "frytki belgijskie", price: "5/10 zł" },
-  { id: 2, description: "frytki z batatów", price: "10 zł" },
-  { id: 3, description: "krążki cebulowe", price: "10 zł" },
-  { id: 4, description: "surówka colesław", price: "5 zł" },
+  { id: 1, description: "ST59", price: "5/10 zł" },
+  { id: 2, description: "ST60", price: "10 zł" },
+  { id: 3, description: "ST61", price: "10 zł" },
+  { id: 4, description: "ST62", price: "5 zł" },
   {
     id: 5,
-    description:
-      "sosy (jeden w cenie frytek): ketchup/ majonez/ BBQ/ duński/ 1000 wysp",
+    description: "ST63",
     price: "1 zł",
   },
 ];
@@ -710,26 +701,26 @@ export const menuAdditivesDrinks: menuAdditiveItem[] = [
   { id: 3, description: "fanta (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 4, description: "sprite (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 5, description: "fuzetee (0.33l/0.5l)", price: "4.5/6 zł" },
-  { id: 6, description: "sok cappy (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 6, description: "ST72", price: "4.5/6 zł" },
   { id: 7, description: "kropla beskidu (0.33l/0.5l)", price: "4.5/6 zł" },
 ];
 
 export const AboutFooterItemsData: AboutFooterItemProps[] = [
   {
     id: 1,
-    title: "Śledź nas na facebooku",
+    title: "ST64",
     href: "https://www.facebook.com/burgerbargorlice",
     className: "facebook",
   },
   {
     id: 2,
-    title: "Obserwuj nas na Instagramie",
+    title: "ST65",
     href: "https://www.instagram.com/burgerbar/",
     className: "instagram",
   },
   {
     id: 3,
-    title: "Podziel się swoją opinią",
+    title: "ST66",
     href: "https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1600024,15z/data=!4m7!3m6!1s0x0:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024!9m1!1b1",
     className: "google",
   },

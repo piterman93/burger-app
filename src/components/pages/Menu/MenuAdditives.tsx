@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/MenuAdditives.scss";
 
@@ -15,19 +16,20 @@ export interface MenuAdditivesProps {
 }
 
 const MenuAdditives: React.FC<MenuAdditivesProps> = ({ activeId }) => {
+  const { t } = useTranslation();
   const dataForContent =
     activeId === 2 ? menuAdditivesItems : menuAdditivesDrinks;
 
   const items = dataForContent.map((item) => (
     <MenuItemOther
       key={item.id}
-      description={item.description}
+      description={t(item.description)}
       price={item.price}
     />
   ));
   return (
     <Card className="menu__additives_card">
-      <h2>{activeId === 2 ? "DODATKI" : "NAPOJE"}</h2>
+      <h2>{activeId === 2 ? t("ST23") : t("ST24")}</h2>
       <div className="menu__additives_description">
         <ul>{items}</ul>
       </div>

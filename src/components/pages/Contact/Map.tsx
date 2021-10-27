@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   GoogleMap,
   withScriptjs,
@@ -11,6 +12,8 @@ import "../../../styles/Map.scss";
 
 const Map: React.FC = () => {
   const [showInfo, setShowInfo] = useState(true);
+
+  const { t, i18n } = useTranslation();
 
   const showInfoHandler = () => {
     setShowInfo(!showInfo);
@@ -30,13 +33,13 @@ const Map: React.FC = () => {
             <h3>BurgerBar Gorlice</h3>
             <p>Henryka Sienkiewicza 2</p>
             <p>38-300 Gorlice</p>
-            <p>Polska</p>
+            <p>{t("ST13")}</p>
             <a
               href="https://www.google.com/maps?ll=49.65463,21.16&z=17&t=m&hl=pl-PL&gl=US&mapclient=apiv3&cid=11482319422438351441"
               target="_blank"
               rel="noreferrer"
             >
-              Zobacz w mapach Google
+              {t("ST14")}
             </a>
           </div>
         </InfoWindow>

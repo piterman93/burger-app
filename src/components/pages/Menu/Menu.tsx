@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/Menu.scss";
 
@@ -21,6 +22,7 @@ const Menu: React.FC = () => {
   const [activeMenuItem, setActiveMenuItem] = useState<menuListItem>(
     MenuListData[0]
   );
+  const { t } = useTranslation();
 
   const activeItemHandler = (item: menuListItem) => {
     setActiveMenuItem(item);
@@ -38,7 +40,7 @@ const Menu: React.FC = () => {
         <div className="menu__list_image">
           <img src={item.src} alt={item.alt} />
         </div>
-        <span className={className}>{item.title}</span>
+        <span className={className}>{t(item.title)}</span>
       </li>
     );
   });
@@ -47,7 +49,7 @@ const Menu: React.FC = () => {
     <BurgerMenuItem
       key={item.id}
       src={item.src}
-      description={item.description}
+      description={t(item.description)}
       alt={item.alt}
       title={item.title}
       priceSmall={item.priceSmall}
@@ -87,7 +89,7 @@ const Menu: React.FC = () => {
       <h1>MENU:</h1>
       <div className="menu__image">
         <img src={activeMenuItem.backgroundImgSrc} alt={activeMenuItem.alt} />
-        <h2>{activeMenuItem.title}</h2>
+        <h2>{t(activeMenuItem.title)}</h2>
       </div>
       <div className="menu__list">
         <ul>{menuList}</ul>

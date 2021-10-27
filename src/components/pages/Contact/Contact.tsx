@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/Contact.scss";
 import "../../../styles/FooterContact.scss";
@@ -9,6 +10,8 @@ import ContactCard from "./ContactCard";
 import { WrappedMap } from "./Map";
 
 const Contact: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 470);
   }, []);
@@ -24,15 +27,15 @@ const Contact: React.FC = () => {
       className="contact__wrapper"
     >
       <div className="description">
-        <h1>KONTAKT</h1>
-        <h2>Masz pytania?</h2>
-        <p>Napisz do nas lub zadźwoń - chętnie odpowiemy!</p>
+        <h1>{t("ST10")}</h1>
+        <h2>{t("ST11")}</h2>
+        <p>{t("ST12")}</p>
       </div>
       <div className="info">
         <ContactCard />
       </div>
       <div className="map">
-        <h2>Mapa dojazdu</h2>
+        <h2>{t("ST69")}</h2>
         <div className="map__wrapper">
           <WrappedMap
             googleMapURL={URL}

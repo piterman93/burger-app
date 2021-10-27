@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/FooterContact.scss";
 
@@ -7,9 +8,10 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const FooterContact: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer__contact">
-      <h3>Dane kontaktowe:</h3>
+      <h3>{t("ST1")}</h3>
       <span id="underline" />
       <div className="contact__info">
         <HomeIcon className="icon" />

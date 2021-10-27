@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/NavBar.scss";
 
-import logo from "../../images/burger-icon.jpg";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-
 import { NavigationData } from "../../utils/constData";
+
+import NavigationMedia from "../UI/NavigationMedia";
+import logo from "../../images/burger-icon.jpg";
 
 const NavBar: React.FC = () => {
   const [navActive, setNavActive] = useState(true);
   const [navTransparent, setNavTransparent] = useState(true);
+
+  const { t } = useTranslation();
 
   let oldScrollValue: number;
 
@@ -44,7 +45,7 @@ const NavBar: React.FC = () => {
 
   const navListItems = NavigationData.map((item) => (
     <li key={item.id}>
-      <NavLink to={item.route}>{item.title}</NavLink>
+      <NavLink to={item.route}>{t(item.title)}</NavLink>
     </li>
   ));
 
@@ -65,28 +66,7 @@ const NavBar: React.FC = () => {
         </nav>
       </div>
       <div className="navigation__aside">
-        <div className="navigation__contact">
-          <LocalPhoneIcon />
-          <span>+48 735 073 060</span>
-        </div>
-        <div className="navigation__socialMedia">
-          <a
-            href="https://www.facebook.com/burgerbargorlice"
-            target="_blank"
-            aria-label="facebook icon"
-            rel="noreferrer"
-          >
-            <FacebookIcon />
-          </a>
-          <a
-            href="https://www.instagram.com/burgerbar.gorlice/?hl=pl"
-            target="_blank"
-            aria-label="instagram icon"
-            rel="noreferrer"
-          >
-            <InstagramIcon />
-          </a>
-        </div>
+        <NavigationMedia />
       </div>
     </div>
   );

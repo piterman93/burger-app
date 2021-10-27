@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/HomeGallery.scss";
 
@@ -9,16 +10,14 @@ import gallery3 from "../../../images/gallery3.jpg";
 import ButtonLink from "../../UI/ButtonLink";
 
 const HomeGallery: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="home__gallery">
       <div className="home__gallery_description">
         <div className="description__wrapper">
-          <h1>GALERIA</h1>
-          <p>
-            Głodny? Zobacz zdjęcia naszych przepysznych burgerów i odwiedź nasz
-            lokal już dziś!
-          </p>
-          <ButtonLink title="GALERIA" route="/gallery" />
+          <h1>{t("ST19")}</h1>
+          <p>{t("ST20")}</p>
+          <ButtonLink title={t("ST19")} route="/gallery" />
         </div>
       </div>
       <div className="home__gallery_images">

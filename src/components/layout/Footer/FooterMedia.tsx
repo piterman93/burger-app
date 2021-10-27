@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../../styles/FooterMedia.scss";
 
@@ -7,9 +8,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
 
 const FooterMedia: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer__media">
-      <h3>Obserwuj nas:</h3>
+      <h3>{t("ST4")}</h3>
       <span className="underline" />
       <div className="media__icons">
         <div className="icon__container">
@@ -35,7 +37,7 @@ const FooterMedia: React.FC = () => {
           </a>
         </div>
       </div>
-      <h3>Sprawdź opinie:</h3>
+      <h3>{t("ST5")}</h3>
       <span className="underline" />
       <div className="icon__container">
         <a
