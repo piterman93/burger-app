@@ -35,6 +35,10 @@ const Layout: React.FC = () => {
   };
 
   useEffect(() => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 1200) {
+      setHamburgerMenu(true);
+    }
     window.addEventListener("scroll", opacityAndArrowHandler);
     window.addEventListener("resize", documentWidthHandler);
     return () => {

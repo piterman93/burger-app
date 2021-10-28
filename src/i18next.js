@@ -21,6 +21,12 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    backend: {
+      loadPath:
+        process.env.NODE_ENV !== "production"
+          ? `./locales/{{lng}}/{{ns}}.json`
+          : `https://raw.githubusercontent.com/piterman93/burger-app/master/public/locales/{{lng}}/{{ns}}.json`,
+    },
     fallbackLng: "pl",
     debug: true,
     whitelist: languages,

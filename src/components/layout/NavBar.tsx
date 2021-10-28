@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
 
   let oldScrollValue: number;
 
-  const controlHeaderHandler = () => {
+  const controlHeaderHandler = useCallback(() => {
     const newScrollValue = window.pageYOffset;
     if (oldScrollValue - newScrollValue > 0) {
       setNavActive(true);
@@ -30,14 +30,14 @@ const NavBar: React.FC = () => {
       setNavTransparent(true);
     }
     oldScrollValue = newScrollValue;
-  };
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", controlHeaderHandler);
     return () => {
       window.removeEventListener("scroll", controlHeaderHandler);
     };
-  }, []);
+  }, [controlHeaderHandler]);
 
   const navClasses = `navigation ${navActive ? "" : "inactive"} ${
     navTransparent ? "" : "black"

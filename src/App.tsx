@@ -14,7 +14,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       {showStartPage && <Start />}
       <Layout />
     </Router>
