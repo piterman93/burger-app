@@ -10,10 +10,10 @@ import ContactCard from "./ContactCard";
 import { WrappedMap } from "./Map";
 
 const Contact: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
-    window.scrollTo(0, 470);
+    window.scrollTo(0, 490);
   }, []);
 
   const URL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`;

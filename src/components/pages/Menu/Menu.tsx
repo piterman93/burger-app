@@ -75,7 +75,7 @@ const Menu: React.FC = () => {
     ));
 
   useEffect(() => {
-    window.scrollTo(0, 470);
+    window.scrollTo(0, 490);
   }, []);
 
   return (

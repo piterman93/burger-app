@@ -13,7 +13,7 @@ import "../../../styles/Map.scss";
 const Map: React.FC = () => {
   const [showInfo, setShowInfo] = useState(true);
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const showInfoHandler = () => {
     setShowInfo(!showInfo);
