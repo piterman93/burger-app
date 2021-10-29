@@ -23,7 +23,10 @@ const About: React.FC = () => {
   ));
 
   useEffect(() => {
-    window.scrollTo(0, 490);
+    const width = document.body.clientWidth;
+    if (width < 1200) {
+      window.scrollTo(0, 0);
+    } else window.scrollTo(0, 490);
   }, []);
   return (
     <motion.div

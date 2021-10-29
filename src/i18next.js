@@ -27,6 +27,7 @@ i18n
           ? `./locales/{{lng}}/{{ns}}.json`
           : `https://raw.githubusercontent.com/piterman93/burger-app/master/public/locales/{{lng}}/{{ns}}.json`,
     },
+    lng: "pl",
     fallbackLng: "pl",
     debug: true,
     whitelist: languages,

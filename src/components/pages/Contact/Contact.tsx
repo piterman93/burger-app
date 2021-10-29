@@ -13,7 +13,10 @@ const Contact: React.FC = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    window.scrollTo(0, 490);
+    const width = document.body.clientWidth;
+    if (width < 1200) {
+      window.scrollTo(0, 0);
+    } else window.scrollTo(0, 490);
   }, []);
 
   const URL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`;

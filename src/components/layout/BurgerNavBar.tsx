@@ -20,7 +20,7 @@ const BurgerNavBar: React.FC = () => {
     const newScrollValue = window.pageYOffset;
     if (oldScrollValue - newScrollValue > 0) {
       setNavActive(true);
-    } else if (oldScrollValue - newScrollValue < 0 && window.scrollY > 500) {
+    } else if (oldScrollValue - newScrollValue < 0 && window.scrollY > 0) {
       setNavActive(false);
     }
     if (newScrollValue > 495) {

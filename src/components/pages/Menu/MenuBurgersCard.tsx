@@ -14,9 +14,9 @@ const MenuBurgersCard: React.FC = () => {
         <div className="left">
           <h3>{t("ST26")}</h3>
           <ul>
+            <li>✔ {t("ST73")}</li>
             <li>✔ {t("ST27")}</li>
             <li>✔ {t("ST28")}</li>
-            <li>✔ {t("ST29")}</li>
           </ul>
         </div>
         <div className="right">

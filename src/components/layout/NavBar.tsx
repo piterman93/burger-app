@@ -19,6 +19,7 @@ const NavBar: React.FC = () => {
 
   const controlHeaderHandler = useCallback(() => {
     const newScrollValue = window.pageYOffset;
+
     if (oldScrollValue - newScrollValue > 0) {
       setNavActive(true);
     } else if (oldScrollValue - newScrollValue < 0 && window.scrollY > 500) {
@@ -29,6 +30,7 @@ const NavBar: React.FC = () => {
     } else {
       setNavTransparent(true);
     }
+
     oldScrollValue = newScrollValue;
   }, []);
 
