@@ -25,6 +25,7 @@
     .image__container {
       width: 200px;
       height: 200px;
+      object-fit: cover;
       background-color: white;
       display: flex;
       align-items: center;
