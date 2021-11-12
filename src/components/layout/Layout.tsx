@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import "../../styles/Layout.scss";
 
@@ -14,6 +15,8 @@ const Layout: React.FC = () => {
   const [showArrow, setShowArrow] = useState(false);
   const [opacity, setOpacity] = useState(0.8);
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+  const { t } = useTranslation();
 
   const opacityAndArrowHandler = () => {
     if (window.scrollY > 600) setShowArrow(true);
@@ -64,6 +67,14 @@ const Layout: React.FC = () => {
           <ArrowUpwardIcon className="scroll__top" />
         </button>
       )}
+
+      <a
+        href="https://burger-bar.order.dish.co/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="button button__order">{t("ST74")}</button>
+      </a>
     </div>
   );
 };

@@ -9,6 +9,8 @@ import About from "../pages/About/About";
 import Menu from "../pages/Menu/Menu";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact/Contact";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import CompanyInfo from "../pages/CompanyInfo";
 
 const Section: React.FC = () => {
   const location = useLocation();
@@ -34,6 +36,12 @@ const Section: React.FC = () => {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/privacy-policy">
+            <PrivacyPolicy />
+          </Route>
+          <Route path="/company-info">
+            <CompanyInfo />
           </Route>
           <Route path="*">
             <Redirect to="/home" />

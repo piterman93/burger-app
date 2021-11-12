@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 import "../../styles/NavBar.scss";
 
 import { NavigationData } from "../../utils/constData";
-
 import NavigationMedia from "../UI/NavigationMedia";
+
 import logo from "../../images/burger-icon.jpg";
 
 const NavBar: React.FC = () => {
@@ -59,8 +59,8 @@ const NavBar: React.FC = () => {
             <img src={logo} alt="Burger Bar logo" />
           </Link>
         </div>
-        <span>BURGER</span>
-        <span>BAR</span>
+        <span>BurgerBar</span>
+        <span>Gorlice</span>
       </div>
       <div className="navigation__menu">
         <nav>

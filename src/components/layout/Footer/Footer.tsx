@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import "../../../styles/Footer.scss";
 
@@ -8,6 +10,7 @@ import FooterHours from "./FooterHours";
 import FooterMedia from "./FooterMedia";
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer__wrapper">
       <div className="footer__top">
@@ -15,25 +18,38 @@ const Footer: React.FC = () => {
           <div className="footer__logo_container">
             <img src={logo} alt="Burger Bar logo" />
           </div>
-          <span>BURGER</span>
-          <span>BAR</span>
-          <span>GORLICE</span>
+          <span>BurgerBar</span>
+          <span>Gorlice</span>
         </div>
         <FooterContact />
         <FooterHours />
         <FooterMedia />
       </div>
       <div className="footer__bottom">
-        <p>Copyright© 2021</p>
-        <span>
-          <a
-            href="https://www.linkedin.com/in/piotrmaniak93/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Piotr Maniak
-          </a>
-        </span>
+        <div className="footer__bottom_left">
+          <p>
+            {t("ST75")}
+            <span>
+              <a
+                href="https://piterman93.github.io/portfolio-app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Piotr Maniak
+              </a>
+            </span>
+            .
+          </p>
+          <p>Copyright© 2021. {t("ST78")}</p>
+        </div>
+        <div className="footer__bottom_right">
+          <Link to="privacy-policy">
+            <p>{t("ST76")}</p>
+          </Link>
+          <Link to="company-info">
+            <p>{t("ST77")}</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

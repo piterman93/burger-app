@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 import "../../../styles/BannerCard.scss";
 
 import logo from "../../../images/burger-icon.jpg";
-import home1 from "../../../images/home-3.jpg";
-import home2 from "../../../images/home-2.jpg";
+import home1 from "../../../images/gallery/84.jpg";
+import home2 from "../../../images/gallery/104.jpg";
 import Card from "../../UI/Card";
 import ButtonLink from "../../UI/ButtonLink";
 
@@ -19,10 +19,10 @@ const BannerCard: React.FC = () => {
       <div className="home__card_description">
         <div className="home__card_logo">
           <div className="home__logo_container">
-            <img src={logo} alt="Burger Bar logo" />
+            <img src={logo} alt="BurgerBar logo" />
           </div>
-          <span>BURGER</span>
-          <span>BAR</span>
+          <span>BurgerBar</span>
+          <span>Gorlice</span>
         </div>
         <h1>{t("ST15")}</h1>
         <h2>{t("ST16")}</h2>

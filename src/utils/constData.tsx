@@ -7,14 +7,6 @@ export interface navItemData {
   route: string;
 }
 
-// export const NavigationData: navItemData[] = [
-//   { id: 1, title: "START", route: "/home" },
-//   { id: 2, title: "O NAS", route: "/about-us" },
-//   { id: 3, title: "MENU", route: "/menu" },
-//   { id: 4, title: "GALERIA", route: "/gallery" },
-//   { id: 5, title: "KONTAKT", route: "/contact" },
-// ];
-
 export const NavigationData: navItemData[] = [
   { id: 1, title: "ST67", route: "/home" },
   { id: 2, title: "ST6", route: "/about-us" },
@@ -26,7 +18,7 @@ export const NavigationData: navItemData[] = [
 export const AboutMenuItemsData: BurgerMenuItemProps[] = [
   {
     id: 1,
-    src: require("../images/cheeser.jpg").default,
+    src: require("../images/gallery/46.jpg").default,
     alt: "burger bar menu",
     title: "CHEESER",
     description: "ST44",
@@ -36,7 +28,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 2,
-    src: require("../images/bacon.jpg").default,
+    src: require("../images/gallery/45.jpg").default,
     alt: "burger bar menu",
     title: "BACON",
     description: "ST45",
@@ -46,7 +38,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 3,
-    src: require("../images/ostry.jpg").default,
+    src: require("../images/gallery/44.jpg").default,
     alt: "burger bar menu",
     title: "OSTRRRY",
     description: "ST46",
@@ -56,7 +48,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 4,
-    src: require("../images/bbq.jpg").default,
+    src: require("../images/gallery/42.jpg").default,
     alt: "burger bar menu",
     title: "BBQ",
     description: "ST47",
@@ -69,7 +61,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
 export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   {
     id: 1,
-    src: require("../images/cheeser.jpg").default,
+    src: require("../images/gallery/46.jpg").default,
     alt: "burger bar menu",
     title: "CHEESER",
     description: "ST44",
@@ -79,7 +71,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 2,
-    src: require("../images/bacon.jpg").default,
+    src: require("../images/gallery/45.jpg").default,
     alt: "burger bar menu",
     title: "BACON",
     description: "ST45",
@@ -89,7 +81,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 3,
-    src: require("../images/ostry.jpg").default,
+    src: require("../images/gallery/44.jpg").default,
     alt: "burger bar menu",
     title: "OSTRRRY",
     description: "ST46",
@@ -99,7 +91,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 4,
-    src: require("../images/bbq.jpg").default,
+    src: require("../images/gallery/42.jpg").default,
     alt: "burger bar menu",
     title: "BBQ",
     description: "ST47",
@@ -109,7 +101,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 5,
-    src: require("../images/goral.jpg").default,
+    src: require("../images/gallery/41.jpg").default,
     alt: "burger bar menu",
     title: "GÓRAL",
     description: "ST48",
@@ -119,7 +111,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 6,
-    src: require("../images/nacho.jpg").default,
+    src: require("../images/gallery/40.jpg").default,
     alt: "burger bar menu",
     title: "NACHO",
     description: "ST49",
@@ -129,7 +121,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 7,
-    src: require("../images/americano.jpg").default,
+    src: require("../images/gallery/39.jpg").default,
     alt: "burger bar menu",
     title: "AMERICANO",
     description: "ST50",
@@ -139,7 +131,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 8,
-    src: require("../images/anglik.jpg").default,
+    src: require("../images/gallery/38.jpg").default,
     alt: "burger bar menu",
     title: "ANGLIK",
     description: "ST51",
@@ -149,7 +141,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 9,
-    src: require("../images/double.jpg").default,
+    src: require("../images/gallery/37.jpg").default,
     alt: "burger bar menu",
     title: "DOUBLE",
     description: "ST52",
@@ -159,9 +151,9 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 10,
-    src: require("../images/koko.jpg").default,
+    src: require("../images/gallery/36.jpg").default,
     alt: "burger bar menu",
-    title: "KO KO",
+    title: "KOKO",
     description: "ST53",
     priceSmall: "16 zł",
     priceBig: "18 zł",
@@ -169,7 +161,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 11,
-    src: require("../images/vege-ser.jpg").default,
+    src: require("../images/gallery/35.jpg").default,
     alt: "burger bar menu",
     title: "VEGE SER",
     description: "ST54",
@@ -179,13 +171,23 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
   },
   {
     id: 12,
-    src: require("../images/vege-burak.jpg").default,
+    src: require("../images/gallery/34.jpg").default,
     alt: "burger bar menu",
     title: "VEGE BURAK",
     description: "ST55",
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+  },
+  {
+    id: 13,
+    src: require("../images/babycheeser.jpg").default,
+    alt: "burger bar menu",
+    title: "BABYCHEESER",
+    description: "ST84",
+    priceSmall: "12 zł",
+    priceBig: "-",
+    priceSet: "15 zł",
   },
 ];
 
@@ -215,407 +217,527 @@ export const galleryImages: galleryItem[] = [
   {
     id: 1,
     src: require("../images/gallery/1.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 2,
     src: require("../images/gallery/2.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 3,
     src: require("../images/gallery/3.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 4,
     src: require("../images/gallery/4.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 5,
     src: require("../images/gallery/5.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 6,
     src: require("../images/gallery/6.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 7,
     src: require("../images/gallery/7.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 8,
     src: require("../images/gallery/8.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 9,
     src: require("../images/gallery/9.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 10,
     src: require("../images/gallery/10.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 11,
     src: require("../images/gallery/11.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 12,
     src: require("../images/gallery/12.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 13,
     src: require("../images/gallery/13.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 14,
     src: require("../images/gallery/14.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 15,
     src: require("../images/gallery/15.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 16,
     src: require("../images/gallery/16.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 17,
     src: require("../images/gallery/17.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 18,
     src: require("../images/gallery/18.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 19,
     src: require("../images/gallery/19.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 20,
     src: require("../images/gallery/20.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 21,
     src: require("../images/gallery/21.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 22,
     src: require("../images/gallery/22.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 23,
     src: require("../images/gallery/23.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 24,
     src: require("../images/gallery/24.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 25,
     src: require("../images/gallery/25.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 26,
     src: require("../images/gallery/26.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 27,
     src: require("../images/gallery/27.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 28,
     src: require("../images/gallery/28.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 29,
     src: require("../images/gallery/29.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 30,
     src: require("../images/gallery/30.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 31,
     src: require("../images/gallery/31.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 32,
     src: require("../images/gallery/32.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 33,
     src: require("../images/gallery/33.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 34,
     src: require("../images/gallery/34.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 35,
     src: require("../images/gallery/35.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 36,
     src: require("../images/gallery/36.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 37,
     src: require("../images/gallery/37.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 38,
     src: require("../images/gallery/38.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 39,
     src: require("../images/gallery/39.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 40,
     src: require("../images/gallery/40.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 41,
     src: require("../images/gallery/41.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 42,
     src: require("../images/gallery/42.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 43,
     src: require("../images/gallery/43.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 44,
     src: require("../images/gallery/44.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 45,
     src: require("../images/gallery/45.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 46,
     src: require("../images/gallery/46.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 47,
     src: require("../images/gallery/47.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 48,
     src: require("../images/gallery/48.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 49,
     src: require("../images/gallery/49.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 50,
     src: require("../images/gallery/50.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 51,
     src: require("../images/gallery/51.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 52,
     src: require("../images/gallery/52.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 53,
     src: require("../images/gallery/53.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 54,
     src: require("../images/gallery/54.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 55,
     src: require("../images/gallery/55.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 56,
     src: require("../images/gallery/56.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 57,
     src: require("../images/gallery/57.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 58,
     src: require("../images/gallery/58.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 59,
     src: require("../images/gallery/59.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 60,
     src: require("../images/gallery/60.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 61,
     src: require("../images/gallery/61.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 62,
     src: require("../images/gallery/62.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 63,
     src: require("../images/gallery/63.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 64,
     src: require("../images/gallery/64.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 65,
     src: require("../images/gallery/65.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 66,
     src: require("../images/gallery/66.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 67,
     src: require("../images/gallery/67.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 68,
     src: require("../images/gallery/68.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 69,
     src: require("../images/gallery/69.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 70,
     src: require("../images/gallery/70.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 71,
     src: require("../images/gallery/71.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 72,
     src: require("../images/gallery/72.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 73,
     src: require("../images/gallery/73.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 74,
     src: require("../images/gallery/74.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 75,
     src: require("../images/gallery/75.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 76,
     src: require("../images/gallery/76.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 77,
     src: require("../images/gallery/77.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 78,
     src: require("../images/gallery/78.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 79,
     src: require("../images/gallery/79.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 80,
     src: require("../images/gallery/80.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
   },
   {
     id: 81,
     src: require("../images/gallery/81.jpg").default,
-    alt: "Burger Bar Gallery",
+    alt: "ST19",
+  },
+  {
+    id: 82,
+    src: require("../images/gallery/82.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 83,
+    src: require("../images/gallery/83.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 84,
+    src: require("../images/gallery/84.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 85,
+    src: require("../images/gallery/85.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 86,
+    src: require("../images/gallery/86.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 87,
+    src: require("../images/gallery/87.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 88,
+    src: require("../images/gallery/88.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 89,
+    src: require("../images/gallery/89.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 90,
+    src: require("../images/gallery/90.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 91,
+    src: require("../images/gallery/91.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 92,
+    src: require("../images/gallery/92.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 93,
+    src: require("../images/gallery/93.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 94,
+    src: require("../images/gallery/94.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 95,
+    src: require("../images/gallery/95.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 96,
+    src: require("../images/gallery/96.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 97,
+    src: require("../images/gallery/97.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 98,
+    src: require("../images/gallery/98.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 99,
+    src: require("../images/gallery/99.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 100,
+    src: require("../images/gallery/100.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 101,
+    src: require("../images/gallery/101.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 102,
+    src: require("../images/gallery/102.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 103,
+    src: require("../images/gallery/103.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 104,
+    src: require("../images/gallery/104.jpg").default,
+    alt: "ST19",
+  },
+  {
+    id: 105,
+    src: require("../images/gallery/105.jpg").default,
+    alt: "ST19",
   },
 ];
 
@@ -659,21 +781,21 @@ export const MenuListData: menuListItem[] = [
     src: require("../images/gallery/1.jpg").default,
     alt: "Burger Menu Image",
     title: "ST56",
-    backgroundImgSrc: require("../images/burgers.jpg").default,
+    backgroundImgSrc: require("../images/burgery.jpg").default,
   },
   {
     id: 2,
     src: require("../images/gallery/31.jpg").default,
     alt: "Dodatki Menu Image",
     title: "ST57",
-    backgroundImgSrc: require("../images/fries.jpg").default,
+    backgroundImgSrc: require("../images/dodatki.jpg").default,
   },
   {
     id: 3,
     src: require("../images/cola.jpg").default,
     alt: "Napoje Menu Image",
     title: "ST58",
-    backgroundImgSrc: require("../images/cola-menu.jpg").default,
+    backgroundImgSrc: require("../images/napoje.jpg").default,
   },
 ];
 
@@ -693,6 +815,8 @@ export const menuAdditivesItems: menuAdditiveItem[] = [
     description: "ST63",
     price: "1 zł",
   },
+  { id: 6, description: "ST86", price: "10 zł" },
+  { id: 7, description: "ST87", price: "10 zł" },
 ];
 
 export const menuAdditivesDrinks: menuAdditiveItem[] = [
@@ -700,9 +824,9 @@ export const menuAdditivesDrinks: menuAdditiveItem[] = [
   { id: 2, description: "coca cola zero (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 3, description: "fanta (0.33l/0.5l)", price: "4.5/6 zł" },
   { id: 4, description: "sprite (0.33l/0.5l)", price: "4.5/6 zł" },
-  { id: 5, description: "fuzetee (0.33l/0.5l)", price: "4.5/6 zł" },
-  { id: 6, description: "ST72", price: "4.5/6 zł" },
-  { id: 7, description: "kropla beskidu (0.33l/0.5l)", price: "4.5/6 zł" },
+  { id: 5, description: "fuzetee (0.5l)", price: "6 zł" },
+  { id: 6, description: "ST72", price: "5 zł" },
+  { id: 7, description: "kropla beskidu (0.5l)", price: "3 zł" },
 ];
 
 export const AboutFooterItemsData: AboutFooterItemProps[] = [

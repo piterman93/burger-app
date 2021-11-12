@@ -13,7 +13,7 @@ const Gallery: React.FC = () => {
   const { t } = useTranslation();
   const galleryContent = galleryImages.map((image) => (
     <div className="image__container" key={image.id}>
-      <img src={image.src} alt={image.alt} />
+      <img src={image.src} alt={t(image.alt)} />
     </div>
   ));
 

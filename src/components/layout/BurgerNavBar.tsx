@@ -64,7 +64,7 @@ const BurgerNavBar: React.FC = () => {
         <div className="navigation__logo">
           <div className="navigation__logo_container">
             <Link to="/home">
-              <img src={logo} alt="Burger Bar logo" />
+              <img src={logo} alt="BurgerBar logo" />
             </Link>
           </div>
           <span>BURGER</span>

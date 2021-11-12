@@ -28,6 +28,13 @@ const BurgerSideMenu: React.FC<BurgerSideMenuProps> = ({ onClick, active }) => {
       <nav>
         <ul>{navListItems}</ul>
       </nav>
+      <a
+        href="https://burger-bar.order.dish.co/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="button">{t("ST74")}</button>
+      </a>
       <div className="side__menu__bottom">
         <NavigationMedia />
       </div>

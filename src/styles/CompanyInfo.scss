@@ -1,0 +1,46 @@
+@import "./index.scss";
+
+.companyInfo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 40px;
+    margin-top: 3rem;
+    border: 2px dotted white;
+    padding: 0.5rem 2rem;
+    text-decoration: underline;
+    text-align: center;
+
+    @include mobile {
+      max-width: 60%;
+    }
+  }
+
+  .companyInfo__description {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 5rem;
+
+    @include mobile {
+      align-items: center;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 17px;
+    }
+  }
+}

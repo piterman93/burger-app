@@ -14,13 +14,13 @@
   align-items: center;
   justify-content: space-between;
   font-family: "Alfa Slab One", cursive;
+  background-color: black;
 
   @media screen and (max-width: 350px) {
     max-width: 250px;
   }
 
   &.active {
-    background-color: black;
     transform: translateX(-300px);
   }
 

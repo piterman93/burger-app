@@ -16,7 +16,7 @@ const FooterContact: React.FC = () => {
       <div className="contact__info">
         <HomeIcon className="icon" />
         <div className="contact__description">
-          <p>Burger Bar Gorlice</p>
+          <p>BurgerBar Gorlice</p>
           <p>Henryka Sienkiewicza 2</p>
           <p>38-300 Gorlice</p>
         </div>

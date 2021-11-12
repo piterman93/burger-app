@@ -18,6 +18,11 @@ const MenuBurgersCard: React.FC = () => {
             <li>✔ {t("ST27")}</li>
             <li>✔ {t("ST28")}</li>
           </ul>
+          <h3>{t("ST85")}</h3>
+          <ul>
+            <li>✔ {t("ST73")}</li>
+            <li>✔ {t("ST27")}</li>
+          </ul>
         </div>
         <div className="right">
           <h3>{t("ST29")}</h3>

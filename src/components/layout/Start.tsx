@@ -12,10 +12,10 @@ const Start: React.FC = () => {
     <div className="start">
       <div className="start__logo">
         <div className="start__logo_container">
-          <img src={logo} alt="Burger Bar logo" />
+          <img src={logo} alt="BurgerBar logo" />
         </div>
-        <span>BURGER</span>
-        <span>BAR</span>
+        <span>BurgerBar</span>
+        <span>Gorlice</span>
       </div>
     </div>,
     portalElement

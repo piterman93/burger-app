@@ -22,13 +22,13 @@ const HomeGallery: React.FC = () => {
       </div>
       <div className="home__gallery_images">
         <div className="image__wrapper">
-          <img src={gallery1} alt="burger Bar 1" />
+          <img src={gallery1} alt="burgerBar 1" />
         </div>
         <div className="image__wrapper">
-          <img src={gallery2} alt="burger Bar 2" />
+          <img src={gallery2} alt="burgerBar 2" />
         </div>
         <div className="image__wrapper">
-          <img src={gallery3} alt="burger Bar 3" />
+          <img src={gallery3} alt="burgerBar 3" />
         </div>
       </div>
     </div>
