@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import "../../../styles/Contact.scss";
 import "../../../styles/FooterContact.scss";
 
 import { containerVariants } from "../../../utils/constData";
 import ContactCard from "./ContactCard";
-import { WrappedMap } from "./Map";
+
+import Map from "../../../images/mapa.jpg";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -18,8 +20,6 @@ const Contact: React.FC = () => {
       window.scrollTo(0, 0);
     } else window.scrollTo(0, 490);
   }, []);
-
-  const URL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`;
 
   return (
     <motion.div
@@ -40,13 +40,21 @@ const Contact: React.FC = () => {
       <div className="map">
         <h2>{t("ST69")}</h2>
         <div className="map__wrapper">
-          <WrappedMap
-            googleMapURL={URL}
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `60vh` }} />}
-            mapElement={<div style={{ height: `100%` }} />}
-          ></WrappedMap>
+          <img src={Map} alt="map" />
         </div>
+        <button className="button button__menu">
+          <a
+            href="https://www.google.com/maps/place/BurgerBar+Gorlice/@49.6546212,21.1578137,17z/data=!3m1!4b1!4m5!3m4!1s0x473dc78dfee29261:0x9f5964adc401a251!8m2!3d49.6546212!4d21.1600024"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>{t("ST119")}</span>
+            <div className="arrow">
+              Let's go!
+              <ArrowRightAltIcon />
+            </div>
+          </a>
+        </button>
       </div>
     </motion.div>
   );

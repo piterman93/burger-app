@@ -67,7 +67,6 @@ const Layout: React.FC = () => {
           <ArrowUpwardIcon className="scroll__top" />
         </button>
       )}
-
       <a
         href="https://burger-bar.order.dish.co/"
         target="_blank"
