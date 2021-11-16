@@ -11,6 +11,7 @@ export interface BurgerMenuItemProps {
   priceSmall: string;
   priceBig: string;
   priceSet: string;
+  childrenTitle: string;
 }
 
 const BurgerMenuItem: React.FC<BurgerMenuItemProps> = ({
@@ -21,6 +22,7 @@ const BurgerMenuItem: React.FC<BurgerMenuItemProps> = ({
   priceSmall,
   priceBig,
   priceSet,
+  childrenTitle,
 }) => {
   return (
     <li>
@@ -30,6 +32,7 @@ const BurgerMenuItem: React.FC<BurgerMenuItemProps> = ({
         </div>
         <div className="menu__item">
           <div className="menu__item_left">
+            {childrenTitle && <h3>{childrenTitle}</h3>}
             <span className="item__title">{title}</span>
             <span className="item__info">{description}</span>
           </div>

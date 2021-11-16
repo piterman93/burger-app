@@ -18,6 +18,7 @@ const HomeMenu: React.FC = () => {
       key={item.id}
       src={item.src}
       description={t(item.description)}
+      childrenTitle={t(item.childrenTitle)}
       alt={item.alt}
       title={item.title}
       priceSmall={item.priceSmall}

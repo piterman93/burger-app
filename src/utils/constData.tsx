@@ -25,6 +25,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     priceSmall: "14 zł",
     priceBig: "16 zł",
     priceSet: "20/22 zł",
+    childrenTitle: "",
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ export const AboutMenuItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
 ];
 
@@ -68,6 +72,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "14 zł",
     priceBig: "16 zł",
     priceSet: "20/22 zł",
+    childrenTitle: "",
   },
   {
     id: 2,
@@ -78,6 +83,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 3,
@@ -88,6 +94,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 4,
@@ -98,6 +105,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 5,
@@ -108,6 +116,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 6,
@@ -118,6 +127,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 7,
@@ -128,6 +138,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 8,
@@ -138,6 +149,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 9,
@@ -148,6 +160,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "22 zł",
     priceBig: "24 zł",
     priceSet: "28/32 zł",
+    childrenTitle: "",
   },
   {
     id: 10,
@@ -158,6 +171,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "16 zł",
     priceBig: "18 zł",
     priceSet: "22/24 zł",
+    childrenTitle: "",
   },
   {
     id: 11,
@@ -168,6 +182,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 12,
@@ -178,6 +193,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "18 zł",
     priceBig: "20 zł",
     priceSet: "24/26 zł",
+    childrenTitle: "",
   },
   {
     id: 13,
@@ -188,6 +204,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     priceSmall: "12 zł",
     priceBig: "-",
     priceSet: "15 zł",
+    childrenTitle: "ST120",
   },
 ];
 

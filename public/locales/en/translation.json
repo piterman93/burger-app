@@ -7,7 +7,7 @@
   "ST6": "ABOUT US",
   "ST7": "Find out more",
   "ST8": "about our burger bar",
-  "ST9": "BurgerBar is a restaurant in Gorlice, which was created for people with a passion for delicious food. Our specialties are burgers, of which we currently offer as many as 12. Additionally, each month we add our original 'burger of the month' to the menu. We focus on interesting and new combinations '/ burgers of the month in particular /', as well as the quality and freshness of the ingredients, thanks to which our customers have the opportunity to try flavors they have not known before. Everyone will find something for themselves in our restaurant. In addition to classic beef burgers, the offer also includes vegetarian items. BurgerBar is a place that Gorlicah lacked. Check out our offer and see for yourself!",
+  "ST9": "BurgerBar is a restaurant in Gorlice, which was created for people with a passion for delicious food. Our specialties are burgers, of which we currently offer as many as 12. Additionally, each month we add our original 'burger of the month' to the menu. We focus on interesting and new combinations '/ burgers of the month in particular /', as well as the quality and freshness of the ingredients, thanks to which our customers have the opportunity to try flavors they have not known before. Everyone will find something for themselves in our restaurant. In addition to classic beef burgers, the offer also includes vegetarian items. Additionally, to our menu we have introduced an item prepared especially for the youngest - 'Babycheeser'. BurgerBar is a place that Gorlicah lacked. Check out our offer and see for yourself!",
   "ST10": "CONTACT",
   "ST11": "Have any questions?",
   "ST12": "Write or call us - will be happy to answer!",
@@ -83,7 +83,7 @@
   "ST82": "VAT ID:",
   "ST83": "Company info",
   "ST84": "(chicken, cheddar, lettuce, pickle, ketchup)",
-  "ST85": "New BABYCHEESER! Set contains:",
+  "ST85": "*New BABYCHEESER! Set contains:",
   "ST86": "mozzarella sticks (served with the original 1000 island sauce)",
   "ST87": "camembert bites (served with the original 1000 island sauce)",
   "ST88": "PRIVACY POLICY",
@@ -117,5 +117,6 @@
   "ST116": "/contact",
   "ST117": "/privacy-policy",
   "ST118": "/company-info",
-  "ST119": "GOOGLE MAPS"
+  "ST119": "GOOGLE MAPS",
+  "ST120": "*NEW - special offer for children"
 }
