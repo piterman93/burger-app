@@ -24,6 +24,10 @@
       bottom: 0px;
       left: 0px;
       opacity: 0.8;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     .home__contact_wrapper {

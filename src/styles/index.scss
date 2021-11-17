@@ -21,6 +21,10 @@ body {
     background-color: rgb(226, 155, 23);
     border: none;
     letter-spacing: 0.1rem;
+
+    @media screen and (max-width: $width) {
+      font-family: "Khand", sans-serif;
+    }
   }
 
   .button__menu {

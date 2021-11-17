@@ -43,10 +43,13 @@
 
     h3 {
       font-weight: normal;
-      margin-top: -3rem;
       margin-bottom: 0;
       font-size: 34px;
       text-align: center;
+
+      @include mobile {
+        margin-bottom: 2rem;
+      }
     }
 
     p {
