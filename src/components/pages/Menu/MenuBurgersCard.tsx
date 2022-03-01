@@ -28,15 +28,19 @@ const MenuBurgersCard: React.FC = () => {
           <h3>{t("ST29")}</h3>
           <div className="additives__item">
             <span>* {t("ST30")}</span>
-            <span>1 zł</span>
+            <span>2 zł</span>
           </div>
           <div className="additives__item">
             <span>* {t("ST31")}</span>
-            <span>2 zł</span>
+            <span>3 zł</span>
           </div>
           <div className="additives__item">
             <span>* {t("ST32")}</span>
             <span>6/8 zł</span>
+          </div>
+          <div className="additives__item">
+            <span>* {t("ST122")}</span>
+            <span>8 zł</span>
           </div>
         </div>
       </div>
