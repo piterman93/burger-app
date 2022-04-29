@@ -212,7 +212,7 @@ export const MenuBurgerItemsData: BurgerMenuItemProps[] = [
     alt: "burger bar menu",
     title: "BABYCHEESER",
     description: "ST84",
-    priceSmall: "4 zł",
+    priceSmall: "14 zł",
     priceBig: "-",
     priceSet: "18 zł",
     childrenTitle: "ST120",
